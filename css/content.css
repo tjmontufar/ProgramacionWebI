@@ -1,5 +1,18 @@
+body {
+    font-family: 'Lora', serif;
+}
+
+:root {
+    --color-primary-1: #2C2F33;
+    --color-primary-2: #C8A25A;
+    --color-second-1: #EAEAEA;
+    --color-second-2: #F5F1E8;
+    --color-white: #FFFFFF;
+    --color-gray-clear: #9A9A9A;
+}
+
 .container {
-    background-color: rgb(200, 197, 197);
+    /* background-color: rgb(200, 197, 197); */
     width: 100%;
     margin: 0 auto 0 auto;
 }
@@ -12,6 +25,10 @@
     text-align: center;
 }
 
+.text-left {
+    text-align: left;
+}
+
 .text-size-20 {
     font-size: 20px;
 }
@@ -21,18 +38,56 @@
     display: flex;
 }
 
-.col-md-4 {
-    width: 40%;
+.col-md-2 {
+    width: 20%;
+}
+
+.col-md-25 {
+    width: 25%;
 }
 
 .col-md-3 {
     width: 30%;
 }
 
+.col-md-4 {
+    width: 40%;
+}
+
+.col-md-7 {
+    width: 70%;
+}
+
 .img-modules {
     height: 500px;
 }
 
-.bg {
-    background-color: blue;
+.bg-brand-footer {
+    background-color: var(--color-primary-1);
+    color: var(--color-white);
+}
+
+.bg-footer {
+    background-color: var(--color-second-1);
+}
+
+.bg2 {
+    background-color: green;
+}
+
+.margin-20 {
+    margin: 20px;
+}
+
+.margin-40 {
+    margin: 40px;
+}
+
+.margin-left-40 {
+    margin-left: 40px;
+}
+
+.link-style-1 {
+    text-decoration: none;
+    color: var(--color-primary-1);
 }

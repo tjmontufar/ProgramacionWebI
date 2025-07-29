@@ -42,11 +42,12 @@ ul {
     height: 80px;
     color: black;
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 
 .nav .menu li a:hover {
-    background-color: rgba(201, 168, 3, 0.482);
+    background-color: #2C2F33;
+    color: #FFFFFF;
 }
 
 .nav > li {
