@@ -1,0 +1,38 @@
+.container {
+    background-color: rgb(200, 197, 197);
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-size-20 {
+    font-size: 20px;
+}
+
+.row {
+    /* background-color: red; */
+    display: flex;
+}
+
+.col-md-4 {
+    width: 40%;
+}
+
+.col-md-3 {
+    width: 30%;
+}
+
+.img-modules {
+    height: 500px;
+}
+
+.bg {
+    background-color: blue;
+}
