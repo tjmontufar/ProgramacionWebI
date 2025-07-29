@@ -59,3 +59,11 @@ ul {
     position: absolute;
     min-width: 180px;
 }
+
+.menu li:last-child a img {
+  content: url('/img/shopping-bag.png');
+}
+
+.menu li:last-child a:hover img {
+  content: url('/img/shopping-bag-hover.png');
+}
