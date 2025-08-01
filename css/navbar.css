@@ -61,9 +61,9 @@ ul {
 }
 
 .menu li:last-child a img {
-  content: url('/img/shopping-bag.png');
+  content: url('/imagenes/shopping-bag.png');
 }
 
 .menu li:last-child a:hover img {
-  content: url('/img/shopping-bag-hover.png');
+  content: url('/imagenes/shopping-bag-hover.png');
 }

@@ -7,41 +7,56 @@
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/content.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="/js/jquery-3.1.1.min.js"></script>
     <!-- <link rel="stylesheet" href="/css/bootstrap-3.4.1-dist/css/bootstrap.min.css"> -->
 </head>
 <body>
     <div class="navbar">
         <ul class="nav">
-            <li><a class="brand" href=""><img src="/img/brandTyF.png" alt="Brand" style="height: 80px;"></a></li>
+            <li><a class="brand" href="#" id="p-index"><img src="/imagenes/brandTyF.png" alt="Brand" style="height: 80px;"></a></li>
             <div class="menu">
-                <li><a href="">Nuevo</a></li>
-                <li><a href="">Hombre</a></li>
-                <li><a href="">Mujer</a></li>
-                <li><a href="">Categorías</a></li>
-                <li><a href=""><img src="/img/shopping-bag.png" alt="Cart" style="height: 30px;">(0)</a></li>
+                <li><a href="#">Nuevo</a></li>
+                <li><a href="#" id="p-hombres">Hombres</a></li>
+                <li><a href="#" id="p-mujeres">Mujeres</a></li>
+                <li><a href="#"><img src="/imagenes/shopping-bag.png" alt="Cart" style="height: 30px;">(0)</a></li>
             </div>
         </ul>
     </div>
-    <div class="container text-center">
-        <h1>Bienvenido a Threads & Four</h1>
-        <p class="text-size-20">Donde tenemos las mejores prendas de calidad.</p>
-    </div>
-    <div class="row">
-        <div class="col-md-3 text-center">
-            <a href=""><img class="img-modules" src="/img/men.jpg" alt="Men"></a>
+    <section id="pag-principal" class="active-on">
+        <div class="container text-center">
+            <h1>Bienvenido a Threads & Four</h1>
+            <p class="text-size-20">Donde tenemos las mejores prendas de calidad.</p>
         </div>
-        <div class="col-md-4 text-center">
-            <a href=""><img class="img-modules" src="/img/camisanueva.jpg" alt="NewShirts"></a>
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <a href=""><img class="img-modules" src="/imagenes/men.jpg" alt="Men"></a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href=""><img class="img-modules" src="/imagenes/camisanueva.jpg" alt="NewShirts"></a>
+            </div>
+            <div class="col-md-3 text-center">
+                <a href=""><img class="img-modules" src="/imagenes/woman.jpg" alt="Woman"></a>
+            </div>
         </div>
-        <div class="col-md-3 text-center">
-            <a href=""><img class="img-modules" src="/img/woman.jpg" alt="Woman"></a>
+    </section>
+    <section id="pag-hombres" class="active-off">
+        <div class="container text-center">
+            <h1>Prendas para Hombre</h1>
+            <p class="text-size-20">Explora nuestro catálogo de mejor ropa para caballero.</p>
         </div>
-    </div>
+    </section>
+    <section id="pag-mujeres" class="active-off">
+        <div class="container text-center">
+            <h1>Prendas para Mujer</h1>
+            <p class="text-size-20">Explora nuestro catálogo de mejor ropa para dama.</p>
+        </div>
+    </section>
     <br>
+    <!--  ////////////////////// FOOTER ////////////////////// -->
     <footer class="container text-center">
         <div class="row bg-footer">
             <div class="col-md-3 bg-brand-footer">
-                <img class="img-modules margin-20" src="/img/brand-white.png" alt="Men" style="height: 80px;">
+                <img class="img-modules margin-20" src="/imagenes/brand-white.png" alt="Men" style="height: 80px;">
                 <p class="text-left margin-left-40">Contacto: threadsandfour@gmail.com</p>
                 <p class="text-left margin-left-40">Tel: +(504) 9841-2851</p>
             </div>
@@ -67,5 +82,6 @@
             </div>
         </div>
     </footer>
+    <script src="/js/control-nav.js"></script>
 </body>
 </html>

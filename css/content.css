@@ -91,3 +91,11 @@ body {
     text-decoration: none;
     color: var(--color-primary-1);
 }
+
+.active-on {
+    display: block;
+}
+
+.active-off {
+    display: none;
+}

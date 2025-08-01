@@ -1,0 +1,601 @@
+[
+    {
+    "Categoria": "Camisas",
+        "Productos": [{
+            "id": 1,
+            "Nombre": "camisa azul",
+            "Talla": "S-M-L-XL",
+            "Genero": "Hombre",
+            "Precio": 250,
+            "stock": 50,
+            "Descripcion": "Diseño clásico en color azul, confeccionada con algodón transpirable para mayor frescura todo el día.",
+            "Imagen":"/imagenes/caballero/camisas/camisa_azul.jpg"
+        }, {
+            "id": 2,
+            "Nombre": "camisa blanca",
+            "Talla": "S-M-L-XL",
+            "Genero": "Hombre",
+            "Precio": 250,
+            "stock": 30,
+            "Descripcion": "Perfecta para cualquier ocasión, esta camisa blanca combina suavidad y estilo con un corte moderno.",
+            "Imagen": "/imagenes/caballero/camisas/camisa_blanca.jpg"
+        }, {
+            "id": 3,
+            "Nombre": "camisa gris",
+            "Talla": "S-M-L-XL",
+            "Genero": "Hombre",
+            "Precio": 250,
+            "stock": 30,
+            "Descripcion": "Tono neutro y elegante que se adapta a cualquier look. Ideal para climas cálidos por su tejido liviano.",
+            "Imagen": "/imagenes/caballero/camisas/camisa_gris.jpg"
+        }, {
+            "id": 4,
+            "Nombre": "camisa negra",
+            "Talla": "S-M-L-XL",
+            "Genero": "Hombre",
+            "Precio": 250,
+            "stock": 30,
+            "Descripcion": "Un básico indispensable. Estilo sobrio en color negro con una textura cómoda al contacto con la piel.",
+            "Imagen": "/imagenes/caballero/camisas/camisa_negra.jpg"
+        }, {
+            "id": 5,
+            "Nombre": "camisa roja",
+            "Talla": "S-M-L-XL",
+            "Genero": "Hombre",
+            "Precio": 250,
+            "stock": 30,
+            "Descripcion": "Camisa vibrante en tono rojo que destaca con fuerza. Ajuste relajado y tela fresca al tacto.",
+            "Imagen": "/imagenes/caballero/camisas/camisa_roja.jpg"
+        }]
+    },
+
+    {
+    "Categoria": "Calsonetas",
+        "Productos": [{
+            "id": 1,
+            "Nombre": "Calsoneta Azul",
+            "Talla": "S-M",
+            "Genero": "Hombre",
+            "Precio": 19.99,
+            "stock": 50,
+            "Descripcion": "Calsoneta ligera y fresca en tono azul, perfecta para actividades al aire libre o días de playa.",
+            "Imagen": "/imagenes/caballero/calconetas/calsoneta_azul.jpg"
+        }, {
+            "id": 2,
+            "Nombre": "Calsoneta Blanca",
+            "Talla": "S-M-L",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Diseñada para confort bajo el sol. Su tono blanco resalta y su tela se seca rápido.",
+            "Imagen": "/imagenes/caballero/calconetas/calsoneta_blanca.jpg"
+        }, {
+            "id": 3,
+            "Nombre": "Calsoneta gris",
+            "Talla": "L",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Estilo discreto con libertad de movimiento. Ideal para deporte o descanso.",
+            "Imagen": "/imagenes/caballero/calconetas/calsoneta_gris.jpg"
+        }, {
+            "id": 4,
+            "Nombre": "Calsoneta naranja",
+            "Talla": "S",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Color llamativo para destacar. Cómoda y versátil para la piscina o el gym.",
+            "Imagen": "/imagenes/caballero/calconetas/calsoneta_naranja.jpg"
+        }, {
+            "id": 5,
+            "Nombre": "Calsoneta roja",
+            "Talla": "S-M",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Resistente y con diseño moderno. Una opción cómoda para tus días activos.",
+            "Imagen": "/imagenes/caballero/calconetas/calsoneta_roja.jpg"
+        }]
+    },
+
+    {
+    "Categoria": "Camisetas",
+        "Productos": [{
+            "id": 1,
+            "Nombre": "Camiseta blanca",
+            "Talla": "S-M",
+            "Genero": "Hombre",
+            "Precio": 19.99,
+            "stock": 50,
+            "Descripcion": "Un clásico que nunca falla. Fresca y versátil para combinar con todo.",
+            "Imagen": "/imagenes/caballero/camisetas/camiseta_blanca.jpg"
+        }, {
+            "id": 2,
+            "Nombre": "Camiseta negra",
+            "Talla": "S-M-L-XL",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Minimalismo y confort en una sola prenda. Corte regular y tela ligera.",
+            "Imagen": "/imagenes/caballero/camisetas/camiseta_negra.jpg"
+        }, {
+            "id": 3,
+            "Nombre": "Camiseta roja",
+            "Talla": "L",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Color audaz para un look casual, cómoda para uso diario.",
+            "Imagen": "/imagenes/caballero/camisetas/camiseta_roja.jpg"
+        }, {
+            "id": 4,
+            "Nombre": "Camiseta rosa",
+            "Talla": "S",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Toque de color suave con una caída ligera. Perfecta para climas cálidos.",
+            "Imagen": "/imagenes/caballero/camisetas/camiseta_rosa.jpg"
+        }, {
+            "id": 5,
+            "Nombre": "Camiseta verde",
+            "Talla": "S-M",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Verde vibrante que aporta frescura. Ajuste cómodo para cualquier ocasión.",
+            "Imagen": "/imagenes/caballero/camisetas/camiseta_verde.jpg"
+        }]
+    },
+
+    {
+    "Categoria": "pantalones",
+        "Productos": [{
+            "id": 1,
+            "Nombre": "pantalon azul",
+            "Talla": "34-36",
+            "Genero": "Hombre",
+            "Precio": 19.99,
+            "stock": 50,
+            "Descripcion": "Tono sobrio y tejido fresco. Ideal para días casuales y trabajo relajado.",
+            "Imagen": "/imagenes/caballero/pantalones/pantalon_azul.jpg"
+        }, {
+            "id": 2,
+            "Nombre": "pantalon beige",
+            "Talla": "28-30-32-34",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Versátil y ligero, combina con camisas o camisetas sin complicaciones.",
+            "Imagen": "/imagenes/caballero/pantalones/pantalon_beige.jpg"
+        }, {
+            "id": 3,
+            "Nombre": "pantalon caqui",
+            "Talla": "32",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Resistencia y suavidad en un color neutro que se adapta a todo.",
+            "Imagen": "/imagenes/caballero/pantalones/pantalon_caqui.jpg"
+        }, {
+            "id": 4,
+            "Nombre": "pantalon gris",
+            "Talla": "28-30-32-34",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Perfecto para ambientes urbanos. Cómodo y moderno sin perder elegancia.",
+            "Imagen": "/imagenes/caballero/pantalones/pantalon_gris.jpg"
+        }, {
+            "id": 5,
+            "Nombre": "pantalon verdemilitar",
+            "Talla": "28-30-32",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Inspirado en el estilo táctico. Color versátil, tejido duradero.",
+            "Imagen": "/imagenes/caballero/pantalones/pantalon_verdemilitar.jpg"
+        }]
+    },
+
+    {
+    "Categoria": "zapatos",
+        "Productos": [{
+            "id": 1,
+            "Nombre": "zapato amarillo",
+            "Talla": "40-41",
+            "Genero": "Hombre",
+            "Precio": 19.99,
+            "stock": 50,
+            "Descripcion": "Elegancia atrevida en Negro y amarillo. Ideal para quienes quieren destacar.",
+            "Imagen": "/imagenes/caballero/zapatos/zapato_amarillo.jpg"
+        }, {
+            "id": 2,
+            "Nombre": "zapato blanco",
+            "Talla": "40-41-42-43-44",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Estilo deportivo clásico que combina con cualquier outfit informal.",
+            "Imagen": "/imagenes/caballero/zapatos/zapato_blanco.jpg"
+        }, {
+            "id": 3,
+            "Nombre": "zapato naranja",
+            "Talla": "40-41-42-43-44",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Tenis en tono vibrante que da energía a tus pasos. Comodidad garantizada.",
+            "Imagen": "/imagenes/caballero/zapatos/zapato_naranja.jpg"
+        }, {
+            "id": 4,
+            "Nombre": "zapato negro",
+            "Talla": "40-41",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Diseño deportivo con color neutro. Ideal para entrenar o caminar cómodo.",
+            "Imagen": "/imagenes/caballero/zapatos/zapato_negro.jpg"
+        }, {
+            "id": 5,
+            "Nombre": "zapato verde",
+            "Talla": "40-41-42-43-44",
+            "Genero": "Hombre",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Tenis deportivo verde, ideal para salir a correr o hacer ejercicio.",
+            "Imagen": "/imagenes/caballero/zapatos/zapato_verde.jpg"
+        }]
+    },
+
+    {
+    "Categoria": "blusas",
+        "Productos": [{
+            "id": 1,
+            "Nombre": "blusa frida",
+            "Talla": "S-M-L",
+            "Genero": "Mujer",
+            "Precio": 19.99,
+            "stock": 50,
+            "Descripcion": "Blusa ligera con arte y actitud. Inspirada en Frida, ideal para días soleados.",
+            "Imagen": "/imagenes/dama/blusas/blusa_frida.jpg"
+        }, {
+            "id": 2,
+            "Nombre": "blusa gris",
+            "Talla": "S-M-L",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Color neutro para combinar fácil. Textura suave, corte relajado.",
+            "Imagen": "/imagenes/dama/blusas/blusa_gris.jpg"
+        }, {
+            "id": 3,
+            "Nombre": "blusa lucas",
+            "Talla": "S",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Con estampado moderno y un toque juvenil. Perfecta para salidas casuales.",
+            "Imagen": "/imagenes/dama/blusas/blusa_lucas.jpg"
+        }, {
+            "id": 4,
+            "Nombre": "blusa mickey",
+            "Talla": "S",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Blusa con diseño divertido y cómodo. Ideal para un look relajado.",
+            "Imagen": "/imagenes/dama/blusas/blusa_mickey.jpg"
+        }, {
+            "id": 5,
+            "Nombre": "blusa minnie",
+            "Talla": "L",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Estilo tierno y femenino. Ideal para días casuales con actitud alegre.",
+            "Imagen": "/imagenes/dama/blusas/blusa_minnie.jpg"
+        }]
+    },
+
+    {
+    "Categoria": "faldas",
+        "Productos": [{
+            "id": 1,
+            "Nombre": "falda azul",
+            "Talla": "XS-S-M-L-XL",
+            "Genero": "Mujer",
+            "Precio": 19.99,
+            "stock": 50,
+            "Descripcion": "Falda en tono azul con corte clásico. Suave al tacto y perfecta para un look relajado.",
+            "Imagen": "/imagenes/dama/faldas/falda_azul.jpg"
+        }, {
+            "id": 2,
+            "Nombre": "falda blanca",
+            "Talla": "M-XL",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Diseño limpio en blanco puro, ideal para combinar con cualquier blusa o top.",
+            "Imagen": "/imagenes/dama/faldas/falda_blanca.jpg"
+        }, {
+            "id": 3,
+            "Nombre": "falda gris",
+            "Talla": "XS-L",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Tono gris versátil y tejido cómodo. Ideal para uso diario con estilo sobrio.",
+            "Imagen": "/imagenes/dama/faldas/falda_gris.jpg"
+        }, {
+            "id": 4,
+            "Nombre": "falda larga",
+            "Talla": "Unitalla",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Falda larga unitalla con caída fluida. Ideal para un look bohemio y fresco.",
+            "Imagen": "/imagenes/dama/faldas/falda_larga.jpg"
+        }, {
+            "id": 5,
+            "Nombre": "falda short",
+            "Talla": "S-M-L-XL",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Diseño híbrido entre short y falda, cómodo y moderno para días activos.",
+            "Imagen": "/imagenes/dama/faldas/falda_shor.jpg" 
+        }]
+    },
+
+    {
+    "Categoria": "pantalones",
+        "Productos": [{
+            "id": 1,
+            "Nombre": "pantalón azul",
+            "Talla": "3-5-7-9-11-13",
+            "Genero": "Mujer",
+            "Precio": 19.99,
+            "stock": 50,
+            "Descripcion": "Pantalón casual en azul profundo, ideal para el día a día por su frescura y comodidad.",
+            "Imagen": "/imagenes/dama/pantalones/pantalon_azul.jpg"
+        }, {
+            "id": 2,
+            "Nombre": "pantalón beige",
+            "Talla": "11", 
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Color claro y diseño ligero que combina con todo. Corte cómodo y tela suave.",
+            "Imagen": "/imagenes/dama/pantalones/pantalon_beige.jpg"
+        }, {
+            "id": 3,
+            "Nombre": "pantalón cargo",
+            "Talla": "3-5-7-9-11-13",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Estilo utilitario con bolsillos laterales. Ideal para quienes buscan comodidad con actitud.",
+            "Imagen": "/imagenes/dama/pantalones/pantalon_cargo.jpg"
+        }, {
+            "id": 4,
+            "Nombre": "pantalón negro",
+            "Talla": "S-M-L-XL",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Pantalón negro clásico con ajuste relajado. Perfecto para cualquier ocasión.",
+            "Imagen": "/imagenes/dama/pantalones/pantalon_negro.jpg"
+        }, {
+            "id": 5,
+            "Nombre": "pantalón roto",
+            "Talla": "3-5-7-9-11-13",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Diseño moderno con roturas en las piernas. Ideal para un look urbano y desenfadado.",
+            "Imagen": "/imagenes/dama/pantalones/pantalon_roto.jpg"
+        }]
+    },
+
+    {
+    "Categoria": "shorts",
+        "Productos": [{
+            "id": 1,
+            "Nombre": "short beige",
+            "Talla": "S-M-L-XL",
+            "Genero": "Mujer",
+            "Precio": 19.99,
+            "stock": 50,
+            "Descripcion": "Short básico y fresco en color neutro. Ideal para clima cálido.",
+            "Imagen": "/imagenes/dama/shorts/short_beige.jpg"
+        }, {
+            "id": 2,
+            "Nombre": "short blanco",
+            "Talla": "S-M-L-XL",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Diseño limpio y fresco. Perfecto para días soleados y actividades al aire libre.",
+            "Imagen": "/imagenes/dama/shorts/short_blanco.jpg"
+        }, {
+            "id": 3,
+            "Nombre": "short gris",
+            "Talla": "M-L-XL",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Color versátil que combina fácil. Tela suave y fresca al tacto.",
+            "Imagen": "/imagenes/dama/shorts/short_gris.jpg"
+        }, {
+            "id": 4,
+            "Nombre": "short negro",
+            "Talla": "L",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Cómodo y moderno. El negro nunca falla en ningún outfit.",
+            "Imagen": "/imagenes/dama/shorts/short_negro.jpg"
+        }, {
+            "id": 5,
+            "Nombre": "short rojo",
+            "Talla": "S-M-L-XL",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Estilo atrevido y juvenil. Tela ligera y corte cómodo.",
+            "Imagen": "/imagenes/dama/shorts/short_rojo.jpg"
+        }]
+    },
+
+    {
+    "Categoria": "tops",
+        "Productos": [{
+            "id": 1,
+            "Nombre": "top azul",
+            "Talla": "XS-S-M-L",
+            "Genero": "Mujer",
+            "Precio": 19.99,
+            "stock": 50,
+            "Descripcion": "Tono frío con estilo casual. Ideal para verano o días relajados.",
+            "Imagen": "/imagenes/dama/tops/top_azul.jpg"
+        }, {
+            "id": 2,
+            "Nombre": "top blanco",
+            "Talla": "S-M-L",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Top básico que no puede faltar. Fresco y cómodo para cualquier día.",
+            "Imagen": "/imagenes/dama/tops/top_blanco.jpg"
+        }, {
+            "id": 3,
+            "Nombre": "top estraple",
+            "Talla": "XS-S-M-L",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Diseño sin tirantes para lucir los hombros. Ideal para climas calurosos.",
+            "Imagen": "/imagenes/dama/tops/top_estraple.jpg"
+        }, {
+            "id": 4,
+            "Nombre": "top negro",
+            "Talla": "XS-S-M-L",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Top negro clásico y elegante. Se adapta a cualquier ocasión casual.",
+            "Imagen": "/imagenes/dama/tops/top_negro.jpg"
+        }, {
+            "id": 5,
+            "Nombre": "top verde",
+            "Talla": "M-L",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Estilo fresco con tono natural. Comodidad y versatilidad en una prenda.",
+            "Imagen": "/imagenes/dama/tops/top_verde.jpg"
+        }]
+    },
+
+    {
+    "Categoria": "vestidos",
+        "Productos": [{
+            "id": 1,
+            "Nombre": "vestido fucsia",
+            "Talla": "Unitalla",
+            "Genero": "Mujer",
+            "Precio": 19.99,
+            "stock": 50,
+            "Descripcion": "Color vibrante que resalta. Ideal para días cálidos con estilo.",
+            "Imagen": "/imagenes/dama/vestidos/vestido_fucsia.jpg"
+        }, {
+            "id": 2,
+            "Nombre": "vestido estampado",
+            "Talla": "Unitalla",
+            "Genero": "Mujer",
+            "Precio": 24.99, 
+            "stock": 30,
+            "Descripcion": "Ideal para eventos casuales o salir.",
+            "Imagen": "/imagenes/dama/vestidos/vestido_estampado.jpg"
+        }, {
+            "id": 3,
+            "Nombre": "vestido azul",
+            "Talla": "Unitalla",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Elegancia sutil en azul. Comodidad sin perder estilo.",
+            "Imagen": "/imagenes/dama/vestidos/vestido_azul.jpg"
+        }, {
+            "id": 4,
+            "Nombre": "vestido de jean",
+            "Talla": "0-1-3",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Look urbano con corte juvenil. Ideal para salidas informales.",
+            "Imagen": "/imagenes/dama/vestidos/vestido_jean.jpg"
+        }, {
+            "id": 5,
+            "Nombre": "vestido rojo",
+            "Talla": "M-L",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Vestido que enamora con su tono. Comodidad con un toque de pasión.",
+            "Imagen": "/imagenes/dama/vestidos/vestido_rojo.jpg"
+        }]
+    },
+
+    {
+    "Categoria": "zapatos",
+        "Productos": [{
+            "id": 1,
+            "Nombre": "zapato azul",
+            "Talla": "5.5-6.5-7.5-8-8.5-10",
+            "Genero": "Mujer",
+            "Precio": 19.99,
+            "stock": 50,
+            "Descripcion": "Diseño clásico y suave al caminar. Tono elegante y versátil.",
+            "Imagen": "/imagenes/dama/zapatos/zapato_azul.jpg"
+        }, {
+            "id": 2,
+            "Nombre": "zapato blanco",
+            "Talla": "5.5-6.5-7.5-8.5-9-10",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Diseño sobrio en color blanco, ideal para combinar con atuendos claros o pastel.",
+            "Imagen": "/imagenes/dama/zapatos/zapato_blanco.jpg"
+        }, {
+            "id": 3,
+            "Nombre": "zapato cafe",
+            "Talla": "5.5-6-6.5",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Estilo llamativo en cafe brillante. Aporta un toque de carácter a cualquier outfit.",
+            "Imagen": "/imagenes/dama/zapatos/zapato_cafe.jpg"
+        }, {
+            "id": 4,
+            "Nombre": "zapato negro",
+            "Talla": "5.5-6.5-7.5-8.5-9-10",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Clásico y atemporal en negro, con altura media para un look refinado y cómodo.",
+            "Imagen": "/imagenes/dama/zapatos/zapato_negro.jpg"
+        }, {
+            "id": 5,
+            "Nombre": "zapato rosa",
+            "Talla": "5.5-6.5-7.5-8-8.5-10",
+            "Genero": "Mujer",
+            "Precio": 24.99,
+            "stock": 30,
+            "Descripcion": "Diseño delicado en rosa pastel. Ideal para ocasiones especiales o salidas casuales.",
+            "Imagen": "/imagenes/dama/zapatos/zapato_rosa.jpg"
+        }]
+    }
+]
