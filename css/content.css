@@ -33,6 +33,10 @@ body {
     font-size: 20px;
 }
 
+.text-size-30 {
+    font-size: 30px;
+}
+
 .row {
     /* background-color: red; */
     display: flex;
@@ -60,6 +64,28 @@ body {
 
 .img-modules {
     height: 500px;
+}
+
+.img-button:hover .img-modules-text {
+    display: block;
+}
+
+.img-text-w-400 {
+    width: 400px;
+}
+
+.img-text-w-550 {
+    width: 550px;
+}
+
+.img-modules-text {
+    position: absolute;
+    margin-top: -42px;
+    margin-left: 28px;
+    background-color: var(--color-second-2);
+    display: none;
+    color: var(--color-primary-1);
+    font-weight: bold;
 }
 
 .img-background {
@@ -155,6 +181,10 @@ body {
     border: none;
     font-weight: bold;
     margin: 5px;
+}
+
+.btn-talla button:hover {
+    background-color: var(--color-second-2);
 }
 
 /* //////////////// ESTILOS PARA MOSTRAR LOS PRODUCTOS ////////////////// */

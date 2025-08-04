@@ -22,24 +22,35 @@
             </div>
         </ul>
     </div>
-    <section id="pag-principal" class="active-off">
+    <section id="pag-principal" class="active-on">
         <div class="container text-center">
             <h1>Bienvenido a Threads & Four</h1>
             <p class="text-size-20">Donde tenemos las mejores prendas de calidad.</p>
         </div>
         <div class="row">
             <div class="col-md-3 text-center">
-                <a href="#"><img class="img-modules" src="/imagenes/men.jpg" alt="Men"></a>
+                <a href="#" id="img-p-hombres" class="img-button">
+                    <img class="img-modules" src="/imagenes/men.jpg" alt="Men">
+                    <div class="img-modules-text text-size-30 img-text-w-400">Hombres</div>
+                </a>
+                
             </div>
             <div class="col-md-4 text-center">
-                <a href=""><img class="img-modules" src="/imagenes/camisanueva.jpg" alt="NewShirts"></a>
+                <a href="#" id="img-p-newarrivals" class="img-button">
+                    <img class="img-modules" src="/imagenes/camisanueva.jpg" alt="NewShirts">
+                    <div class="img-modules-text text-size-30 img-text-w-550">Prendas Nuevas</div>
+                </a>
+                
             </div>
             <div class="col-md-3 text-center">
-                <a href=""><img class="img-modules" src="/imagenes/woman.jpg" alt="Woman"></a>
+                <a href="#" id="img-p-mujeres" class="img-button">
+                    <img class="img-modules" src="/imagenes/woman.jpg" alt="Woman">
+                    <div class="img-modules-text text-size-30 img-text-w-400">Mujeres</div>
+                </a>
             </div>
         </div>
     </section>
-    <section id="pag-hombres" class="active-on">
+    <section id="pag-hombres" class="active-off">
         <div class="container text-center">
             <div class="content-control">
                 <div class="content-w-50"><img class="img-background margin-10" src="/imagenes/men-background.jpg" alt=""></div>
@@ -99,8 +110,60 @@
     </section>
     <section id="pag-mujeres" class="active-off">
         <div class="container text-center">
-            <h1>Prendas para Mujer</h1>
-            <p class="text-size-20">Explora nuestro catálogo de mejor ropa para dama.</p>
+            <div class="content-control">
+                <div class="content-w-50"><img class="img-background margin-10" src="/imagenes/woman-background.jpg" alt=""></div>
+                
+                <div class="content-w-50 text-left">
+                    <h1>Prendas para Mujer</h1>
+                    <p class="text-size-20">Explora nuestro catálogo de mejor ropa para dama.</p>
+                </div>
+            </div>
+            <div class="content-control">
+                <div class="content-w-20">
+                    <h1 class="text-size-20">Categorias</h1>
+                    <p><a class="link-style-1" href="#">Blusas</a></p>
+                    <p><a class="link-style-1" href="#">Faldas</a></p>
+                    <p><a class="link-style-1" href="#">Pantalones</a></p>
+                    <p><a class="link-style-1" href="#">Short</a></p>
+                    <p><a class="link-style-1" href="#">Tops</a></p>
+                    <p><a class="link-style-1" href="#">Vestidos</a></p>
+                    <p><a class="link-style-1" href="#">Zapatos</a></p>
+                    <hr>
+
+                    <h1 class="text-size-20">Talla</h1>
+                    <div class="btn-talla">
+                        <button type="button">28</button>
+                        <button type="button">29</button>
+                        <button type="button">30</button>
+                        <button type="button">31</button>
+                        <button type="button">32</button>
+                        <button type="button">33</button>
+                        <button type="button">34</button>
+                        <button type="button">35</button>
+                        <button type="button">36</button>
+                        <button type="button">37</button>
+                        <button type="button">38</button>
+                        <button type="button">39</button>
+                        <button type="button">40</button>
+                        <button type="button">XS</button>
+                        <button type="button">S</button>
+                        <button type="button">M</button>
+                        <button type="button">L</button>
+                        <button type="button">XL</button>
+                    </div>
+                    <hr>
+
+                    <h1 class="text-size-20">Precio</h1>
+                    <p><a class="link-style-1" href="#">Alto</a></p>
+                    <p><a class="link-style-1" href="#">Medio</a></p>
+                    <p><a class="link-style-1" href="#">Bajo</a></p>
+                </div>
+                <div class="content-w-80">
+                    <div id="productos-mujeres" class="productos-catalogo">
+                        <!-- Aquí se cargarán los productos de hombres desde el JSON -->
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <br>
@@ -119,10 +182,16 @@
                 <p><a class="link-style-1" href="#">Mujer</a></p>
             </div>
             <div class="col-md-2">
-                <p class="text-size-20">Nosotros</p>
+                <p class="text-size-20">Sobre Nosotros</p>
+                <p><a class="link-style-1" href="#">Historia</a></p>
+                <p><a class="link-style-1" href="#">Misión</a></p>
+                <p><a class="link-style-1" href="#">Visión</a></p>
             </div>
             <div class="col-md-25">
                 <p class="text-size-20">Términos y condiciones</p>
+                <p><a class="link-style-1" href="#">Políticas de uso</a></p>
+                <p><a class="link-style-1" href="#">Envío y devoluciones</a></p>
+                <p><a class="link-style-1" href="#">Métodos de pago</a></p>
             </div>
         </div>
         <div class="row">
@@ -135,46 +204,7 @@
         </div>
     </footer>
     <script src="/js/control-nav.js"></script>
-    <script>
-        $(document).ready(function () {
-            $.getJSON("/json/productos.json", function (data) {
-                let contenedor = $("#productos-hombres");
-                contenedor.empty();
-
-                $.each(data, function (i, categoria) {
-                    // Filtrar productos de genero Hombre
-                    let productosHombre = $.grep(categoria.Productos, function (prod) {
-                        return prod.Genero === "Hombre";
-                    });
-
-                    if (productosHombre.length > 0) {
-                        // Crear título de categoría
-                        // tituloCat es la variable que contiene el título de la categoría
-                        let tituloCat = $("<h2 style='text-align: center;'>").text(categoria.Categoria).addClass("titulo-categoria");
-                        contenedor.append(tituloCat);
-
-                        // Crear contenedor de tarjetas
-                        let fila = $("<div>").addClass("fila-productos");
-
-                        $.each(productosHombre, function (j, prod) {
-                            let card = $("<div>").addClass("producto-card");
-                            card.append(
-                                `<img src="${prod.Imagen}" class="producto-img">`,
-                                `<h3>${prod.Nombre}</h3>`,
-                                `<p class="descripcion">${prod.Descripcion}</p>`,
-                                `<p><strong>Talla:</strong> ${prod.Talla}</p>`,
-                                `<p><strong>Precio:</strong> L. ${prod.Precio}</p>`,
-                                `<p><strong>Stock:</strong> ${prod.stock}</p>`,
-                                `<button class="btn-comprar">Agregar al carrito</button>`
-                            );
-                            fila.append(card);
-                        });
-
-                        contenedor.append(fila);
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="/js/men-content.js"></script>
+    <script src="/js/women-content.js"></script>
 </body>
 </html>
