@@ -59,7 +59,7 @@
             "Precio": 19.99,
             "stock": 50,
             "Descripcion": "Calsoneta ligera y fresca en tono azul, perfecta para actividades al aire libre o días de playa.",
-            "Imagen": "/imagenes/caballero/calconetas/calsoneta_azul.jpg"
+            "Imagen": "/imagenes/caballero/calsonetas/calsoneta_azul.jpg"
         }, {
             "id": 2,
             "Nombre": "Calsoneta Blanca",
@@ -68,7 +68,7 @@
             "Precio": 24.99,
             "stock": 30,
             "Descripcion": "Diseñada para confort bajo el sol. Su tono blanco resalta y su tela se seca rápido.",
-            "Imagen": "/imagenes/caballero/calconetas/calsoneta_blanca.jpg"
+            "Imagen": "/imagenes/caballero/calsonetas/calsoneta_blanca.jpg"
         }, {
             "id": 3,
             "Nombre": "Calsoneta gris",
@@ -77,7 +77,7 @@
             "Precio": 24.99,
             "stock": 30,
             "Descripcion": "Estilo discreto con libertad de movimiento. Ideal para deporte o descanso.",
-            "Imagen": "/imagenes/caballero/calconetas/calsoneta_gris.jpg"
+            "Imagen": "/imagenes/caballero/calsonetas/calsoneta_gris.jpg"
         }, {
             "id": 4,
             "Nombre": "Calsoneta naranja",
@@ -86,7 +86,7 @@
             "Precio": 24.99,
             "stock": 30,
             "Descripcion": "Color llamativo para destacar. Cómoda y versátil para la piscina o el gym.",
-            "Imagen": "/imagenes/caballero/calconetas/calsoneta_naranja.jpg"
+            "Imagen": "/imagenes/caballero/calsonetas/calsoneta_naranja.jpg"
         }, {
             "id": 5,
             "Nombre": "Calsoneta roja",
@@ -95,7 +95,7 @@
             "Precio": 24.99,
             "stock": 30,
             "Descripcion": "Resistente y con diseño moderno. Una opción cómoda para tus días activos.",
-            "Imagen": "/imagenes/caballero/calconetas/calsoneta_roja.jpg"
+            "Imagen": "/imagenes/caballero/calsonetas/calsoneta_roja.jpg"
         }]
     },
 
