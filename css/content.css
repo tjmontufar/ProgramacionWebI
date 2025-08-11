@@ -17,6 +17,10 @@
     margin: 0 auto 0 auto;
 }
 
+.bg-gray-clear {
+    background-color: var(--color-second-1);
+}
+
 .align-items {
     align-items: center;
 }
@@ -27,6 +31,10 @@
 
 .text-left {
     text-align: left;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .text-size-20 {
@@ -96,6 +104,10 @@
     height: 380px;
 }
 
+.img-details {
+    height: 600px;
+}
+
 .bg-brand-footer {
     background-color: var(--color-primary-1);
     color: var(--color-white);
@@ -127,6 +139,14 @@
 
 .margin-left-40 {
     margin-left: 40px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.padding-20 {
+    padding: 20px;
 }
 
 .link-style-1 {
@@ -193,7 +213,11 @@
 }
 
 .btn-talla button:hover {
-    background-color: var(--color-second-2);
+    background-color: var(--color-primary-2);
+}
+
+.btn-talla .talla-selected {
+    background-color: var(--color-primary-2);
 }
 
 /* //////////////// ESTILOS PARA MOSTRAR LOS PRODUCTOS ////////////////// */
@@ -269,4 +293,24 @@
 .btn-comprar:hover {
   background-color: goldenrod;
   transform: scale(1.05);
+}
+
+.form-control {
+    height: 35px;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid var(--color-primary-1);
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-20 {
+    width: 20%;
 }

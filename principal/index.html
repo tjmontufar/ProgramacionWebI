@@ -17,14 +17,13 @@
         <ul class="nav">
             <li><a class="brand" href="#" id="p-index"><img src="/imagenes/brandTyF.png" alt="Brand" style="height: 80px;"></a></li>
             <div class="menu">
-                <li><a href="#">Nuevo</a></li>
-                <li><a href="#" id="p-hombres">Hombres</a></li>
                 <li><a href="#" id="p-mujeres">Mujeres</a></li>
+                <li><a href="#" id="p-hombres">Hombres</a></li>
                 <li><a href="#" id="open-cart"><img src="/imagenes/shopping-bag.png" alt="Cart" style="height: 30px;">(0)</a></li>
             </div>
         </ul>
     </div>
-    <section id="pag-principal" class="active-on">
+    <section id="pag-principal" class="active-off">
         <div class="container text-center">
             <h1>Bienvenido a Threads & Four</h1>
             <p class="text-size-20">Donde tenemos las mejores prendas de calidad.</p>
@@ -40,7 +39,7 @@
             <div class="col-md-4 text-center">
                 <a href="#" id="img-p-newarrivals" class="img-button">
                     <img class="img-modules" src="/imagenes/camisanueva.jpg" alt="NewShirts">
-                    <div class="img-modules-text text-size-30 img-text-w-550">Prendas Nuevas</div>
+                    <div class="img-modules-text text-size-30 img-text-w-550">New Arrivals</div>
                 </a>
                 
             </div>
@@ -51,6 +50,10 @@
                 </a>
             </div>
         </div>
+        <!-- <div class="container bg-gray-clear">
+            <h1>Bienvenido a Threads & Four</h1>
+            <p class="text-size-20">Donde tenemos las mejores prendas de calidad.</p>
+        </div> -->
     </section>
     <section id="pag-hombres" class="active-off">
         <div class="container text-center">
@@ -168,6 +171,33 @@
             </div>
         </div>
     </section>
+    <section id="pag-detalles-producto" class="active-on">
+        <div class="container text-center">
+            <div class="content-control">
+                <div class="content-w-50 text-right">
+                    <img class="img-details margin-10" src="/imagenes/caballero/camisas/camisa_azul.jpg" alt="">
+                </div>
+                <div class="content-w-50 text-left padding-20 text-size-20">
+                    <h1 id="productoText">Camisa</h1>
+                    <p id="descripcionText">Descripcion</p>
+                    <p id="precioText">L. 250.00</p>
+                    <p>Talla:</p>
+                    <div class="btn-talla">
+                        <button id="btn-t-xs" type="button" class="talla-selected">XS</button>
+                        <button id="btn-t-s" type="button">S</button>
+                        <button id="btn-t-m" type="button">M</button>
+                        <button id="btn-t-l" type="button">L</button>
+                        <button id="btn-t-xl" type="button">XL</button>
+                    </div>
+                    <p id="stockText">En stock: 1</p>
+                    <label for="txtCantidad">Cantidad:</label>
+                    <input type="number" class="form-control text-center w-15" id="txtCantidad" name="txtCantidad" value="1" min="1">
+                    <br>
+                    <button type="button" class="checkout-btn margin-top-20">AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--  ////////////////////// CARRITO DE COMPRAS ////////////////////// -->
     <div class="cart-panel" id="cart-panel">
         <div class="cart-header">
@@ -188,126 +218,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Prueba</td>
-                        <td>1</td>
-                        <td>1.00</td>
-                        <td>1.00</td>
-                        <td><button type="button">&times;</button></td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </div>

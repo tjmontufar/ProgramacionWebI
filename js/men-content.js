@@ -24,7 +24,7 @@ $(document).ready(function () {
                 card.append(
                     `<img src="${prod.Imagen}" class="producto-img">`,
                     `<h3>${prod.Nombre}</h3>`,
-                    `<button class="btn-comprar">Ver detalles</button>`
+                    `<button class="btn-detalles btn-comprar" data-id="${prod.id}">Ver detalles</button>`
                 );
                 fila.append(card);
 
@@ -34,4 +34,14 @@ $(document).ready(function () {
             });
         }
     });
+});
+
+$(document).on("click", ".btn-detalles", function () {
+    $("#pag-detalles-producto").removeClass("active-off").addClass("active-on");
+    $("#pag-mujeres").removeClass("active-on").addClass("active-off");
+    $("#pag-hombres").removeClass("active-on").addClass("active-off");
+    $("#pag-principal").removeClass("active-on").addClass("active-off");
+
+    let idproducto = $(this).data("id");
+    console.log("id: ", idproducto);
 });
