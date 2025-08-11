@@ -3,37 +3,35 @@ $(document).ready(function () {
         let contenedor = $("#productos-hombres");
         contenedor.empty();
 
+        let productosHombre = [];
+
         $.each(data, function (i, categoria) {
-            // Filtrar productos de genero Hombre
-            let productosHombre = $.grep(categoria.Productos, function (prod) {
+            let filtrados = $.grep(categoria.Productos, function (prod) {
                 return prod.Genero === "Hombre";
             });
-
-            if (productosHombre.length > 0) {
-                // Crear título de categoría
-                // tituloCat es la variable que contiene el título de la categoría
-                let tituloCat = $("<h2 style='text-align: center;'>").text(categoria.Categoria).addClass("titulo-categoria");
-                contenedor.append(tituloCat);
-
-                // Crear contenedor de tarjetas
-                let fila = $("<div>").addClass("fila-productos");
-
-                $.each(productosHombre, function (j, prod) {
-                    let card = $("<div>").addClass("producto-card");
-                    card.append(
-                        `<img src="${prod.Imagen}" class="producto-img">`,
-                        `<h3>${prod.Nombre}</h3>`,
-                        `<p class="descripcion">${prod.Descripcion}</p>`,
-                        `<p><strong>Talla:</strong> ${prod.Talla}</p>`,
-                        `<p><strong>Precio:</strong> L. ${prod.Precio}</p>`,
-                        `<p><strong>Stock:</strong> ${prod.stock}</p>`,
-                        `<button class="btn-comprar">Agregar al carrito</button>`
-                    );
-                    fila.append(card);
-                });
-
-                contenedor.append(fila);
-            }
+            productosHombre = productosHombre.concat(filtrados);
         });
+
+        if (productosHombre.length > 0) {
+            let fila;
+
+            $.each(productosHombre, function (j, prod) {
+                if (j % 3 === 0) {
+                    fila = $("<div>").addClass("fila-productos");
+                }
+
+                let card = $("<div>").addClass("producto-card");
+                card.append(
+                    `<img src="${prod.Imagen}" class="producto-img">`,
+                    `<h3>${prod.Nombre}</h3>`,
+                    `<button class="btn-comprar">Ver detalles</button>`
+                );
+                fila.append(card);
+
+                if (j % 3 === 2 || j === productosHombre.length - 1) {
+                    contenedor.append(fila);
+                }
+            });
+        }
     });
 });

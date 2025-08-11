@@ -1,0 +1,39 @@
+:root {
+    --color-primary-1: #2C2F33;
+    --color-primary-2: #C8A25A;
+    --color-second-1: #EAEAEA;
+    --color-second-2: #F5F1E8;
+    --color-white: #FFFFFF;
+    --color-gray-clear: #9A9A9A;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead tr th {
+    text-align: left;
+    border-bottom: 1px solid var(--color-primary-1);
+    padding: 8px;
+}
+
+.table tbody tr td{
+    padding: 8px;
+    border-bottom: 1px solid black;
+}
+
+.table tbody tr td button {
+    background-color: var(--color-primary-1);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.table tbody tr td button:hover {
+    background-color: #2c2f33bb;
+}
