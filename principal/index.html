@@ -19,7 +19,7 @@
             <div class="menu">
                 <li><a href="#" id="p-mujeres">Mujeres</a></li>
                 <li><a href="#" id="p-hombres">Hombres</a></li>
-                <li><a href="#" id="open-cart"><img src="/imagenes/shopping-bag.png" alt="Cart" style="height: 30px;">(0)</a></li>
+                <li><a href="#" id="open-cart"><img src="/imagenes/shopping-bag.png" alt="Cart" style="height: 30px;">(<span id="totalProductos">0</span>)</a></li>
             </div>
         </ul>
     </div>
@@ -179,23 +179,19 @@
 
                 <div class="content-w-50 text-left padding-20 text-size-20">
                     <h1 id="productoText">Camisa</h1>
+                    <p id="codigoText" hidden>1</p>
                     <p id="descripcionText">Descripcion</p>
-                    <p id="precioText">L. 250.00</p>
+                    <p>L.<span id="precioText"></span></p>
                     <p>Talla:</p>
-                    <div class="btn-talla" id="btnTalla">
-                        <!-- <button id="btn-t-xs" type="button" class="talla-selected">XS</button>
-                        <button id="btn-t-s" type="button">S</button>
-                        <button id="btn-t-m" type="button">M</button>
-                        <button id="btn-t-l" type="button">L</button>
-                        <button id="btn-t-xl" type="button">XL</button> -->
-                    </div>
+                    <div class="btn-talla" id="btnTalla"></div>
+                    
                     <p>En stock: <span id="stockText">1</span></p>
                     <label for="txtCantidad">Cantidad:</label>
                     <button type="button" id="btnMenos">-</button>
                     <input type="text" class="form-control text-center w-10" id="txtCantidad" name="txtCantidad" value="1" min="1" readonly>
                     <button type="button" id="btnMas">+</button>
                     <br>
-                    <button type="button" class="checkout-btn margin-top-20">AGREGAR AL CARRITO</button>
+                    <button type="button" class="checkout-btn margin-top-20" id="btnAgregarCarrito">AGREGAR AL CARRITO</button>
                 </div>
             </div>
         </div>
@@ -208,7 +204,7 @@
         </div>
         <div class="cart-items">
             <!-- <div id="tbCarrito"></div> -->
-            <table class="table">
+            <table class="table" id="tbCarrito">
                 <thead>
                     <tr>
                         <th width="10%">Codigo</th>
@@ -216,18 +212,28 @@
                         <th width="10%">Cantidad</th>
                         <th width="10%">Precio</th>
                         <th width="10%">Subtotal</th>
+                        <th width="10%">Total</th>
                         <th width="10%"></th>
                     </tr>
                 </thead>
-                <tbody>
-                    
-                </tbody>
+                <tbody></tbody>
             </table>
         </div>
         <div class="cart-footer">
-            <p><b>Subtotal:</b> L<span id="subtotal">0.00</span></p>
-            <p><b>ISV 15%:</b> L<span id="tax">0.00</span></p>
-            <p><b>Total:</b> L<span id="total">0.00</span></p>
+            <div class="cart-footer-details text-size-20">
+                <div class="fact">
+                    <label for="txtSubTotal">Subtotal:</label>
+                    <input type="text" id="txtSubTotal" name="txtSubTotal" readonly value="0.00">
+                </div>
+                <div class="fact">
+                    <label for="txtImpuesto">ISV 15%:</label>
+                    <input type="text" id="txtImpuesto" name="txtImpuesto" readonly value="0.00">
+                </div>
+                <div class="fact">
+                    <label for="txtTotal">Total:</label>
+                    <input type="text" id="txtTotal" name="txtTotal" readonly value="0.00">
+                </div>
+            </div>
             <button class="checkout-btn">VER CARRITO</button>
         </div>
     </div>
@@ -274,5 +280,6 @@
     <script src="/js/men-content.js"></script>
     <script src="/js/women-content.js"></script>
     <script src="/js/product-details.js"></script>
+    <script src="/js/add-to-cart.js"></script>
 </body>
 </html>

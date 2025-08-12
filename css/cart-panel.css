@@ -9,6 +9,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Lora', serif;
 }
 
 .cart-overlay {
@@ -78,4 +79,24 @@
     border: none;
     cursor: pointer;
     font-size: 15px;
+}
+
+.cart-footer-details .fact {
+    height: 50px;
+    /* background-color: orange; */
+}
+
+.cart-footer-details .fact input {
+    font-size: 20px;
+    padding: 5px;
+    text-align: right;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary-1);
+}
+
+.cart-footer-details .fact label {
+    padding: 5px;
+    width: 150px;
+    float: left;
+    font-weight: bold;
 }

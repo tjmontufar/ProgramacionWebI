@@ -46,6 +46,7 @@
 }
 
 .jc-space-between {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -126,10 +127,6 @@
 
 .bg-footer {
     background-color: var(--color-second-1);
-}
-
-.bg2 {
-    background-color: green;
 }
 
 .margin-0 {
@@ -282,13 +279,6 @@
   height: auto;
   border-radius: 5px;
 }
-
-/* .producto-img:hover {
-  border-width: 3px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}  */
 
 .btn-comprar {
   background-color: var(--color-primary-1);

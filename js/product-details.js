@@ -20,14 +20,16 @@ $(document).on("click", ".btn-detalles", function () {
     let txtDescripcionProducto = $("#descripcionText");
     let txtPrecio = $("#precioText");
     let txtImagen = $("#ImagenPanel");
+    let txtCodigo = $("#codigoText");
 
     txtNombreProducto.text(nombre);
     txtDescripcionProducto.text(descripcion);
-    txtPrecio.text("L. " + precio);
+    txtPrecio.text(precio);
     txtImagen.html(`<img class="img-details margin-10" src="`+imagen+`" alt="ImagenPanel">`);
     txtStock.text(stock);
     txtCantidad.val(1);
     txtCantidad.attr("max",stock);
+    txtCodigo.text(idproducto);
 
     let tallasArray = talla.split("-");
     mostrarTallasDisponibles(tallasArray);
@@ -59,7 +61,7 @@ function mostrarTallasDisponibles(tallas) {
     let btnTalla = $("#btnTalla");
     btnTalla.empty();
 
-    tallas.forEach(talla => {
+    tallas.forEach((talla, i) => {
         let btn = $("<button>")
                 .text(talla)
                 .attr("type", "button")
@@ -67,6 +69,9 @@ function mostrarTallasDisponibles(tallas) {
                     $("#btnTalla button").removeClass("talla-selected");
                     $(this).addClass("talla-selected");
                 });
+        if(i === 0) {
+            btn.addClass("talla-selected");
+        }
         btnTalla.append(btn);
     });
 }
