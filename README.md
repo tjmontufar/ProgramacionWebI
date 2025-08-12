@@ -20,3 +20,6 @@ Se crea la seccion de detalles del producto.
 
 11/8/2025 22:15
 Se desarrolla la logica y el funcionamiento del carrito de compras.
+
+12/8/2025 17:09
+Agregando los filtrados y informacion relevante al sistema.

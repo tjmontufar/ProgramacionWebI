@@ -129,6 +129,10 @@
     background-color: var(--color-second-1);
 }
 
+.bg-footer-Two {
+    background-color: var(--color-primary-1);
+}
+
 .margin-0 {
     margin: 0px;
 }
@@ -196,17 +200,14 @@
 }
 
 .content-w-60 {
-    /* background-color: blue; */
     width: 60%;
 }
 
 .content-w-70 {
-    /* background-color: blue; */
     width: 70%;
 }
 
 .content-w-80 {
-    /* background-color: blue; */
     width: 80%;
 }
 
@@ -227,6 +228,18 @@
 .btn-talla .talla-selected {
     background-color: var(--color-primary-2);
 }
+
+.link-style-1.active {
+    font-weight: bold;
+    color: #000; 
+    text-decoration: underline;
+}
+
+.btn-talla button.active {
+    background-color: #333;
+    color: white;
+}
+
 
 /* //////////////// ESTILOS PARA MOSTRAR LOS PRODUCTOS ////////////////// */
 .productos-catalogo {
@@ -314,4 +327,114 @@
 
 .w-20 {
     width: 20%;
+}
+
+/*Estilos para las secciones del footer*/
+/*FUNCIONAMIENTO DE LA CARDS PREGUNTAS FRECUENTES*/
+.faq-item { 
+    border:1px solid #e9e9e9; 
+    border-radius:10px; 
+    margin:12px 0; 
+    overflow:hidden; 
+    background:#fff;
+    font-family: 'Lora', serif; 
+}
+
+.faq-item > summary 
+{
+    list-style:none; 
+    cursor:pointer; 
+    padding:14px 16px; 
+    font-weight:600;
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between;
+    font-family: 'Lora', serif; 
+}
+
+.faq-item > summary::-webkit-details-marker 
+{ 
+    display:none; 
+}
+
+.faq-item > summary::after 
+{ 
+    content:"↓"; font-weight:700; 
+}
+
+.faq-item[open] > summary::after 
+{ 
+    content:"－"; 
+}
+
+.faq-item > p 
+{ 
+    padding:0 16px 16px; margin:0; color:#333; line-height:1.6; 
+}
+
+.font-family 
+{ 
+    font-family: 'Lora', serif; 
+}
+
+.font-size-32 
+{ 
+    font-size: 32px; 
+}
+
+.margin-20px 
+{ 
+    margin: 20px 0; 
+}
+
+.contenido { 
+    color:#555; 
+}
+
+.font-size-40 {
+    font-size: 40px;
+}
+
+.valores {
+    display: flex; 
+    flex-wrap: wrap; 
+    text-align: center; 
+    gap: 30px; 
+    padding: 20px;
+}
+
+.iconos {
+    flex: 1 1 200px; 
+    text-align: center;
+}
+
+.card {
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px; 
+    border: 1px solid #eee; 
+    padding: 30px; 
+    background: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.fa {
+    padding: 10px;
+}
+
+.fab {
+    padding: 10px;
+}
+
+.card:hover {
+
+    border-color: goldenrod;
+    border-width: 3px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }

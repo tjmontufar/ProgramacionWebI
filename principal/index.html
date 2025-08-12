@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/content.css">
     <link rel="stylesheet" href="/css/cart-panel.css">
     <link rel="stylesheet" href="/css/table-style.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="/js/jquery-3.1.1.min.js"></script>
     <!-- <link rel="stylesheet" href="/css/bootstrap-3.4.1-dist/css/bootstrap.min.css"> -->
@@ -69,11 +70,11 @@
             <div class="content-control">
                 <div class="content-w-20 margin-20">
                     <h1 class="text-size-20">Categorias</h1>
-                    <p><a class="link-style-1" href="#">Camisas</a></p>
-                    <p><a class="link-style-1" href="#">Camisetas</a></p>
-                    <p><a class="link-style-1" href="#">Pantalones</a></p>
-                    <p><a class="link-style-1" href="#">Calsonetas</a></p>
-                    <p><a class="link-style-1" href="#">Zapatos</a></p>
+                    <p><a class="link-style-1" href="#" id="Camisas">Camisas</a></p>
+                    <p><a class="link-style-1" href="#" id="Camisetas">Camisetas</a></p>
+                    <p><a class="link-style-1" href="#" id="pantalones">Pantalones</a></p>
+                    <p><a class="link-style-1" href="#" id="Calsonetas">Calsonetas</a></p>
+                    <p><a class="link-style-1" href="#" id="zapatos">Zapatos</a></p>
                     <hr>
 
                     <h1 class="text-size-20">Talla</h1>
@@ -100,9 +101,9 @@
                     <hr>
 
                     <h1 class="text-size-20">Precio</h1>
-                    <p><a class="link-style-1" href="#">Alto</a></p>
-                    <p><a class="link-style-1" href="#">Medio</a></p>
-                    <p><a class="link-style-1" href="#">Bajo</a></p>
+                    <p><a class="link-style-1" href="#" id="alto">Alto</a></p>
+                    <p><a class="link-style-1" href="#" id="medio">Medio</a></p>
+                    <p><a class="link-style-1" href="#" id="bajo">Bajo</a></p>
                 </div>
                 <div class="content-w-80">
                     <div id="productos-hombres" class="productos-catalogo">
@@ -126,48 +127,296 @@
             <div class="content-control">
                 <div class="content-w-20 margin-20">
                     <h1 class="text-size-20">Categorias</h1>
-                    <p><a class="link-style-1" href="#">Blusas</a></p>
-                    <p><a class="link-style-1" href="#">Faldas</a></p>
-                    <p><a class="link-style-1" href="#">Pantalones</a></p>
-                    <p><a class="link-style-1" href="#">Short</a></p>
-                    <p><a class="link-style-1" href="#">Tops</a></p>
-                    <p><a class="link-style-1" href="#">Vestidos</a></p>
-                    <p><a class="link-style-1" href="#">Zapatos</a></p>
+                    <p><a class="link-style-1" href="#" id="blusas">Blusas</a></p>
+                    <p><a class="link-style-1" href="#" id="faldas">Faldas</a></p>
+                    <p><a class="link-style-1" href="#" id="pantalones">Pantalones</a></p>
+                    <p><a class="link-style-1" href="#" id="shorts">Short</a></p>
+                    <p><a class="link-style-1" href="#" id="tops">Tops</a></p>
+                    <p><a class="link-style-1" href="#" id="vestidos">Vestidos</a></p>
+                    <p><a class="link-style-1" href="#" id="zapatos">Zapatos</a></p>
                     <hr>
 
                     <h1 class="text-size-20">Talla</h1>
                     <div class="btn-talla">
-                        <button type="button">28</button>
-                        <button type="button">29</button>
-                        <button type="button">30</button>
-                        <button type="button">31</button>
-                        <button type="button">32</button>
-                        <button type="button">33</button>
-                        <button type="button">34</button>
-                        <button type="button">35</button>
-                        <button type="button">36</button>
-                        <button type="button">37</button>
-                        <button type="button">38</button>
-                        <button type="button">39</button>
-                        <button type="button">40</button>
+                        <button type="button">3</button>
+                        <button type="button">5</button>
+                        <button type="button">5.5</button>
+                        <button type="button">6</button>
+                        <button type="button">6.5</button>
+                        <button type="button">7</button>
+                        <button type="button">7.5</button>
+                        <button type="button">8</button>
+                        <button type="button">8.5</button>
+                        <button type="button">9</button>
+                        <button type="button">10</button>
+                        <button type="button">11</button>
+                        <button type="button">13</button>
                         <button type="button">XS</button>
                         <button type="button">S</button>
                         <button type="button">M</button>
                         <button type="button">L</button>
                         <button type="button">XL</button>
+                        <button type="button">Uni.</button>
                     </div>
                     <hr>
 
                     <h1 class="text-size-20">Precio</h1>
-                    <p><a class="link-style-1" href="#">Alto</a></p>
-                    <p><a class="link-style-1" href="#">Medio</a></p>
-                    <p><a class="link-style-1" href="#">Bajo</a></p>
+                    <p><a class="link-style-1" href="#" id="alto">Alto</a></p>
+                    <p><a class="link-style-1" href="#" id="medio">Medio</a></p>
+                    <p><a class="link-style-1" href="#" id="bajo">Bajo</a></p>
                 </div>
                 <div class="content-w-80">
                     <div id="productos-mujeres" class="productos-catalogo">
                         <!-- Aquí se cargarán los productos de hombres desde el JSON -->
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <!--  ////////////////////// SOBRE LA EMPRESA ////////////////////// -->
+    <section id="pag-historia" class="active-off" style="padding: 50px 0;">
+        <div class="container">
+            <h1 class="margin-20 text-center font-size-40 font-family">¿Quiénes somos?</h1>
+            <div class="card">
+                <h1 class="font-family font-size-32 text-center margin-20px">Nuestra Historia</h1>
+                <p class="contenido">
+                    Threads & Four nació como una tienda 100% virtual con la misión de ofrecer prendas modernas y de calidad sin necesidad de un espacio físico. 
+                    Desde nuestros inicios, hemos apostado por la moda accesible y cómoda, cuidando cada detalle de nuestro catálogo.
+                </p>
+                <p class="contenido">
+                    Gracias a nuestra plataforma en línea, nuestros clientes pueden explorar y comprar desde cualquier lugar, disfrutando de una experiencia rápida, segura y confiable. 
+                    Creemos que la moda es una forma de expresión, y trabajamos para que cada prenda inspire confianza y estilo.
+                </p>
+                <div style="text-align: center; margin-top: 20px;">
+                        <img src="/imagenes/brandTyF.png" alt="Historia de la tienda" style="max-width: 80%; border-radius: 8px; box-shadow: 0 3px 12px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <h1 class="font-family font-size-32 text-center margin-20px">Nuestra Misión</h1>
+              <p class="contenido">
+                Ofrecer prendas modernas, de calidad y accesibles a través de una experiencia de compra 100% en línea, rápida, segura y confiable. 
+                En Threads & Four creemos que la moda es una forma de expresión personal, por lo que cuidamos cada detalle para que nuestras prendas inspiren confianza, 
+                comodidad y estilo en cada cliente.
+              </p>
+              <p class="contenido">
+                Gracias a nuestra plataforma en línea, nuestros clientes pueden explorar y comprar desde cualquier lugar, disfrutando de una experiencia rápida, segura y confiable. Creemos que la moda es una forma de expresión, y trabajamos para que cada prenda inspire confianza y estilo.
+              </p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <h1 class="font-family font-size-32 text-center margin-20px">Nuestra Visión</h1>
+              <p class="contenido">
+                Consolidarnos como la tienda en línea de ropa preferida a nivel nacional e internacional, reconocida por la calidad de sus prendas, 
+                la excelencia en el servicio y la capacidad de reinventar la moda accesible, 
+                conectando con clientes que buscan expresar su personalidad a través de su estilo.
+              </p>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <h1 class="font-family font-size-32 text-center margin-20px">Nuestros Valores</h1>
+              <div class="valores">
+
+                <div class="iconos">
+                  <i class="fas fa-users" style="font-size: 50px; color: #2C2F33;"></i>
+                  <h3 class="margin-top center">INTEGRIDAD</h3>
+                  <p class="contenido text-center">Actuamos siempre con transparencia, respetamo las leyes y cumplimos lo que prometemos.</p>
+                </div>
+
+                <div class="iconos">
+                  <i class="fas fa-thumbs-up" style="font-size: 50px; color: #2C2F33;"></i>
+                  <h3 class="margin-top">ACTITUD DE SERVICIO</h3>
+                  <p class="contenido">Servicio con convicción y respeto al prójimo, la comunidad y el país.</p>
+                </div>
+
+                <div class="iconos">
+                  <i class="fas fa-lightbulb" style="font-size: 50px; color: #2C2F33;"></i>
+                  <h3 class="margin-top">INNOVACIÓN</h3>
+                  <p class="contenido text-center">Generamos y aplicamos continuamente ideas nuevas, productos y servicios que reflejen tendencias de vanguardia.</p>
+                </div>
+
+                <div class="iconos">
+                  <i class="fas fa-trophy" style="font-size: 50px; color: #2C2F33;"></i>
+                  <h3 class="margin-top">EXCELENCIA</h3>
+                  <p class="contenido text-center">Exceddemos expectativas y buscamos resultados excepcionales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!--  ////////////////////// PREGUNTAS FRECUENTES ////////////////////// -->
+    <section id="pag-preguntas" class="active-off" style="padding: 50px 0;">
+        <div class="container">
+            <div class="card">
+              <h1 class="font-family font-size-32 text-center margin-20px">Preguntas Frecuentes</h1>
+              <details class="faq-item">
+                <summary class="font-family">¿Cómo crear una cuenta?</summary>
+                <p>Haz clic en “Registrarse”, completa tus datos y confirma el correo.</p>
+              </details>
+          
+              <details class="faq-item">
+                <summary>Olvidé mi contraseña ¿Cómo la recupero?</summary>
+                <p>En “Iniciar sesión” elige “Olvidé mi contraseña”, ingresa tu correo y sigue el enlace que te enviamos.</p>
+              </details>
+          
+              <details class="faq-item">
+                <summary>¿Cómo realizar un pedido?</summary>
+                <p>Explora el catálogo, agrega al carrito y completa el pago seguro en línea.</p>
+              </details>
+          
+              <details class="faq-item">
+                <summary>No encuentro el producto que busco ¿Qué hago?</summary>
+                <p>Escríbenos por WhatsApp o correo y te ayudamos a localizarlo o te sugerimos alternativas.</p>
+              </details>
+          
+              <details class="faq-item">
+                <summary>¿Cuál es el plazo de entrega?</summary>
+                <p>De 24 a 72 horas hábiles en zonas principales (puede variar por destino).</p>
+              </details>
+          
+              <details class="faq-item">
+                <summary>¿Cuál es la zona de cobertura?</summary>
+                <p>Enviamos a todo el país. Verifica tu código postal al finalizar la compra.</p>
+              </details>
+          
+              <details class="faq-item">
+                <summary>¿Cuál es el costo del envío?</summary>
+                <p>Se calcula automáticamente según tu ubicación y peso del pedido antes de pagar.</p>
+              </details>
+          </div>
+    </section>
+    <!--  ////////////////////// POLÍTICAS DE USO ////////////////////// -->
+    <section id="pag-politicas" class="active-off" style="padding: 50px 0;">
+      <div class="container">
+          <h1 class="margin-20 text-center font-size-40 font-family">Políticas de Uso</h1>
+          <div class="card">
+            <h1 class="font-family font-size-32 text-center margin-20px">1. Aceptación de términos</h1>
+            <p class="contenido">
+              Al acceder y utilizar el sitio de Threads & Four, aceptas estas Políticas de Uso y demás términos
+              publicados (incluyendo envío, devoluciones y métodos de pago). Si no estás de acuerdo, por favor no utilices el sitio.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <h1 class="font-family font-size-32 text-center margin-20px">2. Compras y Pagos</h1>
+            <ul class="contenido">
+              <li>Los precios y la disponibilidad pueden variar sin previo aviso hasta finalizar la compra.</li>
+              <li>Los pedidos podrán ser rechazados por falta de stock, validación de pago o incumplimiento de políticas.</li>
+              <li>Los medios de pago aceptados se detallan en <a href="#" class="nav-metodos link-style-1">Métodos de pago</a>.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <h1 class="font-family font-size-32 text-center margin-20px">3. Uso permitido del sitio</h1>
+            <ul class="contenido">
+              <li>No está permitido extraer, copiar masivamente o reutilizar contenido (texto, imágenes, precios) sin autorización.</li>
+              <li>Prohíbese el uso del sitio para actividades fraudulentas, ingeniería inversa o interferencia con su funcionamiento.</li>
+              <li>Los contenidos y marcas son propiedad de Threads & Four o de sus titulares y están protegidos por la ley.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <h1 class="font-family font-size-32 text-center margin-20px">4. Envíos, cambios y devoluciones</h1>
+            <p class="contenido">
+              Los plazos, costos y condiciones se describen en <a href="#" class="link-style-1 nav-envios">Envío y devoluciones</a> <br>
+              Revisa esas condiciones antes de completar tu compra.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <h1 class="font-family font-size-32 text-center margin-20px">5. Reseñas y Comunidad</h1>
+            <ul class="contenido">
+              <li>Las reseñas deben ser veraces, respetuosas y referirse al producto o servicio.</li>
+              <li>No se permiten contenido ofensivo, spam, datos personales de terceros ni enlaces maliciosos.</li>
+              <li>Podemos moderar, ocultar o eliminar contenido que incumpla estas reglas.</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <!--  ////////////////////// METODOS DE PAGO Y ENVIOS ////////////////////// -->
+    <section id="pag-metodos" class="active-off" style="padding: 50px 0;">
+        <div class="container">
+            <h1 class="margin-20 text-center font-size-32 font-family">Métodos de pago</h1>
+            <div class="card">
+              <h1 class="font-family font-size-32 text-center margin-20px">Formas de pago aceptadas</h1>
+              <ul class="contenido">
+                <li>Tarjetas de crédito y débito (Visa, MasterCard, American Express).</li>
+                <li>Transferencia bancaria a cuentas autorizadas.</li>
+                <li>Billeteras electrónicas autorizadas.</li>
+                <li>Pago contra entrega (disponible en zonas seleccionadas).</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <h2 class="font-family font-size-32 text-center margin-20px">Seguridad de pagos</h2>
+            <p class="contenido">
+              Todos los pagos son procesados de forma segura y encriptada. Si detectamos actividad inusual, podremos solicitar verificación adicional para proteger tu compra.
+            </p>
+          </div>
+    </section>
+    <section id="pag-envios" class="active-off" style="padding: 50px 0;">
+      <div class="container">
+          <h1 class="margin-20 text-center font-size-32 font-family">Envíos y devoluciones</h1>
+          <div class="card">
+            <h1 class="font-family font-size-32 text-center margin-20px">Plaza de entrega</h1>
+            <p class="contenido">
+              Los pedidos se entregan entre 24 y 72 horas hábiles en zonas principales. En otras zonas, los plazos pueden variar según la ubicación y la empresa de mensajería.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <h1 class="font-family font-size-32 text-center margin-20px">Costos de Envíos</h1>
+            <p class="contenido">
+              El costo se calcula automáticamente según tu ubicación y el peso/volumen del pedido antes de finalizar la compra.
+            </p>
+          </div>
+          <div class="card">
+            <h2 class="font-family font-size-32 text-center margin-20px">Cambios y devoluciones</h2>
+            <ul class="contenido">
+              <li>El producto debe devolverse en su empaque original y sin signos de uso.</li>
+              <li>El plazo máximo para solicitar un cambio o devolución es de 7 días hábiles después de la entrega.</li>
+              <li>Los costos de envío por devoluciones corren por cuenta del cliente, salvo que el producto tenga defectos de fábrica.</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <!--  ////////////////////// ATENCION AL CLIENTE ////////////////////// -->
+    <section id="pag-atencion" class="active-off" style="padding: 50px 0;">
+        <div class="container">
+            <h1 class="margin-20 text-center font-size-40 font-family">Atención al cliente</h1>
+        
+            <div class="card">
+                <h2 class="font-family font-size-28 margin-20px">Canales de contacto</h2>
+                <ul class="contenido">
+                <li>Correo electrónico: threadsandfour@gmail.com</li>
+                <li>WhatsApp: +(504) 9841-2851</li>
+                <li>Instagram: <a href="https://www.instagram.com/threadsandfour/" target="_blank" rel="noopener" class="link-style-1">@threadsandfour</a></li>
+                <li>Facebook: <a href="https://www.facebook.com/share/16szK7qCTM/" target="_blank" rel="noopener" class="link-style-1">Threads & Four</a></li>
+                </ul>
+            </div>
+        
+            <div class="card">
+                <h2 class="font-family font-size-28 margin-20px">Horario de atención</h2>
+                <p class="contenido">
+                Lunes a viernes: 9:00 a.m. - 6:00 p.m.  
+                Sábados: 9:00 a.m. - 1:00 p.m.  
+                Domingos y feriados: Cerrado.
+                </p>
+            </div>
+        
+            <div class="card">
+                <h2 class="font-family font-size-28 margin-20px">Tiempo de respuesta</h2>
+                <p class="contenido">
+                Procuramos responder a todos los mensajes y solicitudes en un plazo máximo de 24 horas hábiles.
+                </p>
             </div>
         </div>
     </section>
@@ -195,6 +444,26 @@
                 </div>
             </div>
         </div>
+    </section>
+    <!--  ////////////////////// INFORMACION DE COMPRA ////////////////////// -->
+    <section id="pag-comprar" class="active-off" style="padding: 50px 0;">
+      <div class="container">
+        <h1 class="margin-20 text-center font-size-32 font-family">¿Como comprar en Threads & Four?</h1>
+        <div class="card">
+          <h1 class="font-family font-size-32 text-center margin-20px">Comprar en Threads & Four es muy fácil, sólo debes seguir los siguientes pasos:</h1>
+           <ol style="padding-left: 20px; line-height: 1.6;">
+            <li>Para buscar el producto que deseas, puedes navegar a través de las categorías del menú o usar la barra de búsqueda.</li>
+            <li>Una vez que encuentres el producto, selecciona el color, la talla y agrégalo a tu carrito de compras.</li>
+             <li>Puedes seguir navegando y agregando más productos al carrito si lo deseas.</li>
+              <li>Cuando hayas terminado, ve a tu carrito de compras y haz clic en <strong>FINALIZAR COMPRA</strong>.</li>
+              <li>Ingresa tu correo electrónico para continuar con el proceso.</li>
+              <li>Proporciona tus datos personales y la dirección de envío.</li>
+              <li>Elige el método de pago que prefieras.</li>
+              <li>Verifica los detalles y recibirás un correo de confirmación.</li>
+              <li>Recibe tu pedido en la dirección que proporcionaste.</li>
+            </ol>
+        </div>
+      </div>
     </section>
     <!--  ////////////////////// CARRITO DE COMPRAS ////////////////////// -->
     <div class="cart-panel" id="cart-panel">
@@ -243,34 +512,36 @@
     <footer class="container text-center">
         <div class="row bg-footer">
             <div class="col-md-3 bg-brand-footer">
-                <img class="img-modules margin-20" src="/imagenes/brand-white.png" alt="Men" style="height: 80px;">
-                <p class="text-left margin-left-40">Contacto: threadsandfour@gmail.com</p>
-                <p class="text-left margin-left-40">Tel: +(504) 9841-2851</p>
+                <img class="img-modules margin-20 font-family" src="/imagenes/brand-white.png" alt="Men" style="height: 70px;">
+                <p  class="text-left margin-left-40 font-family"><i class="fa fa-envelope"></i>threadsandfour@gmail.com</p>
+                <p class="text-left margin-left-40 font-family"><i class="fab fa-facebook"></i><a href="https://www.facebook.com/share/16szK7qCTM/" target="_blank" rel="noopener">Threads and Four HN</a></p>
+                <p class="text-left margin-left-40 font-family"> <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/threadsandfour/" target="_blank" rel="noopener">threadsandfour</a></p>
+                <p class="text-left margin-left-40 font-family"><i class="fa fa-phone"></i>Tel: +(504) 9841-2851</p>
             </div>
             <div class="col-md-2">
                 <p class="text-size-20">Tienda</p>
-                <p><a class="link-style-1" href="#">Nuevo</a></p>
-                <p><a class="link-style-1" href="#">Hombre</a></p>
-                <p><a class="link-style-1" href="#">Mujer</a></p>
+                <p class="margin-down font-family"><a class="link-style-1" href="#">Nuevo</a></p>
+                <p class="margin-down font-family"><a class="link-style-1" href="#" id="p-hombres">Hombre</a></p>
+                <p class="margin-down font-family"><a class="link-style-1" href="#" id="p-mujeres">Mujer</a></p>
             </div>
             <div class="col-md-2">
-                <p class="text-size-20">Sobre Nosotros</p>
-                <p><a class="link-style-1" href="#">Historia</a></p>
-                <p><a class="link-style-1" href="#">Misión</a></p>
-                <p><a class="link-style-1" href="#">Visión</a></p>
+                <p class="text-size-20">Información</p>
+                <p class="margin-down font-family"><a class="link-style-1" href="#"id="p-historia">¿Quiénes somos?</a></p>
+                <p class="margin-down font-family"><a class="link-style-1" href="#" id="p-comprar">¿Cómo comprar?</a></p>
+                <p class="margin-down font-family"><a class="link-style-1" href="#" id="p-preguntas">Preguntas Frecuentes</a></p>
+                <p class="margin-down font-family"><a class="link-style-1" href="#" id="p-atencion">Atención al cliente</a></p>
             </div>
             <div class="col-md-25">
                 <p class="text-size-20">Términos y condiciones</p>
-                <p><a class="link-style-1" href="#">Políticas de uso</a></p>
-                <p><a class="link-style-1" href="#">Envío y devoluciones</a></p>
-                <p><a class="link-style-1" href="#">Métodos de pago</a></p>
+                <p class="margin-down font-family"><a class="link-style-1" href="#" id="p-politicas">Políticas de uso</a></p>
+                <p class="margin-down font-family"><a class="link-style-1" href="#" id="p-envios">Envío y devoluciones</a></p>
+                <p class="margin-down font-family"><a class="link-style-1" href="#" id="p-metodos">Métodos de pago</a></p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 bg-footer">
-                Text
+            <div class="col-md-3 bg-footer-Two">
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 text-center">
                 <p>© 2025 Threads & Four - Todos los derechos reservados.</p>
             </div>
         </div>
