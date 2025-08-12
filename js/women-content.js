@@ -24,7 +24,15 @@ $(document).ready(function () {
                 card.append(
                     `<img src="${prod.Imagen}" class="producto-img">`,
                     `<h3>${prod.Nombre}</h3>`,
-                    `<button class="btn-comprar">Ver detalles</button>`
+                    `<p>L. ${prod.Precio}</p>`,
+                    `<button class="btn-detalles btn-comprar" 
+                    data-id="${prod.id}" 
+                    data-nombre="${prod.Nombre}"
+                    data-descripcion="${prod.Descripcion}"
+                    data-precio="${prod.Precio}"
+                    data-stock="${prod.stock}"
+                    data-imagen="${prod.Imagen}"
+                    data-talla="${prod.Talla}">Ver detalles</button>`
                 );
                 fila.append(card);
 

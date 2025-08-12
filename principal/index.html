@@ -55,7 +55,7 @@
             <p class="text-size-20">Donde tenemos las mejores prendas de calidad.</p>
         </div> -->
     </section>
-    <section id="pag-hombres" class="active-off">
+    <section id="pag-hombres" class="active-on">
         <div class="container text-center">
             <div class="content-control">
                 <div class="content-w-50"><img class="img-background margin-10" src="/imagenes/men-background.jpg" alt=""></div>
@@ -171,27 +171,29 @@
             </div>
         </div>
     </section>
-    <section id="pag-detalles-producto" class="active-on">
+    <!--  ////////////////////// DETALLES DEL PRODUCTO ////////////////////// -->
+    <section id="pag-detalles-producto" class="active-off">
         <div class="container text-center">
             <div class="content-control">
-                <div class="content-w-50 text-right">
-                    <img class="img-details margin-10" src="/imagenes/caballero/camisas/camisa_azul.jpg" alt="">
-                </div>
+                <div class="content-w-50 container-img" id="ImagenPanel"></div>
+
                 <div class="content-w-50 text-left padding-20 text-size-20">
                     <h1 id="productoText">Camisa</h1>
                     <p id="descripcionText">Descripcion</p>
                     <p id="precioText">L. 250.00</p>
                     <p>Talla:</p>
-                    <div class="btn-talla">
-                        <button id="btn-t-xs" type="button" class="talla-selected">XS</button>
+                    <div class="btn-talla" id="btnTalla">
+                        <!-- <button id="btn-t-xs" type="button" class="talla-selected">XS</button>
                         <button id="btn-t-s" type="button">S</button>
                         <button id="btn-t-m" type="button">M</button>
                         <button id="btn-t-l" type="button">L</button>
-                        <button id="btn-t-xl" type="button">XL</button>
+                        <button id="btn-t-xl" type="button">XL</button> -->
                     </div>
-                    <p id="stockText">En stock: 1</p>
+                    <p>En stock: <span id="stockText">1</span></p>
                     <label for="txtCantidad">Cantidad:</label>
-                    <input type="number" class="form-control text-center w-15" id="txtCantidad" name="txtCantidad" value="1" min="1">
+                    <button type="button" id="btnMenos">-</button>
+                    <input type="text" class="form-control text-center w-10" id="txtCantidad" name="txtCantidad" value="1" min="1" readonly>
+                    <button type="button" id="btnMas">+</button>
                     <br>
                     <button type="button" class="checkout-btn margin-top-20">AGREGAR AL CARRITO</button>
                 </div>
@@ -271,5 +273,6 @@
     <script src="/js/control-cart.js"></script>
     <script src="/js/men-content.js"></script>
     <script src="/js/women-content.js"></script>
+    <script src="/js/product-details.js"></script>
 </body>
 </html>

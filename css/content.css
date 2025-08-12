@@ -105,7 +105,18 @@
 }
 
 .img-details {
-    height: 600px;
+    max-width: 80%;
+    height: auto;
+    max-height: 600px;
+    display: block;
+    object-fit: contain;
+}
+
+.container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .bg-brand-footer {
