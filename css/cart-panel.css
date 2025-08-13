@@ -27,8 +27,8 @@
 
 .cart-panel {
     position: fixed;
-    top: 0; right: -750px;
-    width: 700px;
+    top: 0; right: -800px;
+    width: 750px;
     height: 100%;
     background: var(--color-white);
     color: var(--color-primary-1);
@@ -99,4 +99,12 @@
     width: 150px;
     float: left;
     font-weight: bold;
+}
+
+.cart-img-product {
+    max-width: 60px;
+    min-height: 60px;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }

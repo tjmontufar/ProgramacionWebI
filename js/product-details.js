@@ -25,7 +25,7 @@ $(document).on("click", ".btn-detalles", function () {
     txtNombreProducto.text(nombre);
     txtDescripcionProducto.text(descripcion);
     txtPrecio.text(precio);
-    txtImagen.html(`<img class="img-details margin-10" src="`+imagen+`" alt="ImagenPanel">`);
+    txtImagen.html(`<img id="imagenProducto" class="img-details margin-10" src="`+imagen+`" alt="ImagenPanel">`);
     txtStock.text(stock);
     txtCantidad.val(1);
     txtCantidad.attr("max",stock);

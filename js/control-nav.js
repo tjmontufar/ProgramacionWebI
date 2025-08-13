@@ -5,14 +5,14 @@ $("#p-index").on("click", function () {
     $("#pag-historia, #pag-comprar , #pag-preguntas, #pag-politicas, #pag-metodos , #pag-envios, #pag-atencion, #pag-detalles-producto").removeClass("active-on").addClass("active-off");
 });
 
-$("#p-hombres, #img-p-hombres").on("click", function () {
+$("#p-hombres, #img-p-hombres, #btn-camisas-hombre").on("click", function () {
     $("#pag-hombres").removeClass("active-off").addClass("active-on");
     $("#pag-principal").removeClass("active-on").addClass("active-off");
     $("#pag-mujeres").removeClass("active-on").addClass("active-off");
     $("#pag-historia, #pag-comprar , #pag-preguntas, #pag-politicas, #pag-metodos , #pag-envios, #pag-atencion, #pag-detalles-producto").removeClass("active-on").addClass("active-off");
 });
 
-$("#p-mujeres, #img-p-mujeres").on("click", function () {
+$("#p-mujeres, #img-p-mujeres, #btn-vestidos-mujer, #btn-zapatos-mujer").on("click", function () {
     $("#pag-mujeres").removeClass("active-off").addClass("active-on");
     $("#pag-hombres").removeClass("active-on").addClass("active-off");
     $("#pag-principal").removeClass("active-on").addClass("active-off");
@@ -65,4 +65,15 @@ $("#p-atencion").on("click", function () {
     $("#pag-principal").removeClass("active-on").addClass("active-off");
     $("#pag-hombres , #pag-mujeres").removeClass("active-on").addClass("active-off");
     $("#pag-historia, #pag-comprar , #pag-preguntas, #pag-politicas , #pag-metodos, #pag-envios, #pag-detalles-producto").removeClass("active-on").addClass("active-off");
+});
+
+$("#btn-camisas-hombre").on("click", function() {
+    window.scrollTo(0, 0);
+});
+
+$("#btn-vestidos-mujer").on("click", function() {
+    window.scrollTo(0, 0);
+});
+$("#btn-zapatos-mujer").on("click", function() {
+    window.scrollTo(0, 0);
 });

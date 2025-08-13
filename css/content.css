@@ -71,6 +71,10 @@
     width: 40%;
 }
 
+.col-md-5 {
+    width: 50%;
+}
+
 .col-md-7 {
     width: 70%;
 }
@@ -109,6 +113,14 @@
     max-width: 80%;
     height: auto;
     max-height: 600px;
+    display: block;
+    object-fit: contain;
+}
+
+.img-height-700 {
+    max-width: 100%;
+    height: auto;
+    max-height: 800;
     display: block;
     object-fit: contain;
 }
@@ -199,6 +211,13 @@
     width: 50%;
 }
 
+.content-w-50.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .content-w-60 {
     width: 60%;
 }
@@ -239,7 +258,6 @@
     background-color: #333;
     color: white;
 }
-
 
 /* //////////////// ESTILOS PARA MOSTRAR LOS PRODUCTOS ////////////////// */
 .productos-catalogo {
@@ -437,4 +455,22 @@
 a {
     color: white;
     text-decoration: none;
+}
+
+.btn-vinculo {
+    width: 150px;
+    height: 75px;
+    background-color: var(--color-primary-1);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-vinculo:hover {
+    background-color: var(--color-primary-2);
+}
+
+.x {
+    background-color: var(--color-primary-2);
 }
