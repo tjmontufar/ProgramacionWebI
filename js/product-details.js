@@ -6,6 +6,7 @@ $(document).on("click", ".btn-detalles", function () {
     $("#pag-mujeres").removeClass("active-on").addClass("active-off");
     $("#pag-hombres").removeClass("active-on").addClass("active-off");
     $("#pag-principal").removeClass("active-on").addClass("active-off");
+    $("#pag-new").removeClass("active-on").addClass("active-off");
 
     let idproducto = $(this).data("id");
     let nombre = $(this).data("nombre");

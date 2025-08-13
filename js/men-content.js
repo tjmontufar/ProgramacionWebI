@@ -146,7 +146,8 @@ $(document).ready(function () {
         $('#pag-hombres .content-w-20 a[id]').on('click', function(e) {
             e.preventDefault();
             let id = $(this).attr('id');
-            if (['Camisas', 'Camisetas', 'pantalones', 'Calsonetas', 'zapatos'].includes(id)) {
+            // Agregar la categoria 'Nuevo'
+            if (['Nuevo', 'Camisas', 'Camisetas', 'pantalones', 'Calsonetas', 'zapatos'].includes(id)) {
                 if (filtrosActuales.categoria === id) {
                     filtrosActuales.categoria = null;
                     $(this).removeClass('active');

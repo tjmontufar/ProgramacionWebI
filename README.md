@@ -24,3 +24,4 @@ Se desarrolla la logica y el funcionamiento del carrito de compras.
 12/8/2025 17:09
 Agregando los filtrados y informacion relevante al sistema.
 Se agregan nuevos elementos de sugerencias en el inicio y se corrijen algunos bugs del carrito de compras.
+Se diseña el contenido para la seccion New Arrivals y se corrije un bug con el stock del producto.

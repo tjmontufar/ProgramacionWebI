@@ -52,7 +52,6 @@ btnAgregarCarrito.on("click", function() {
 
     CalcularTotalFactura();
     CalcularTotalProductos(1);
-    console.log(carrito);
     alert("¡Producto cargado al carrito!");
 });
 
@@ -64,9 +63,9 @@ function CalcularTotalFactura() {
 
     $("#tbCarrito tbody tr").each(function(i,v) {
         let element = $(this).find("td");
-        subtotal += parseFloat(element.eq(4).text());
+        subtotal += parseFloat(element.eq(5).text());
         isv += (subtotal * 0.15);
-        total += parseFloat(element.eq(5).text());
+        total += parseFloat(element.eq(6).text());
     });
 
     $("#txtSubTotal").val("L."+subtotal.toFixed(2));
@@ -78,11 +77,14 @@ function CalcularTotalFactura() {
 function BorrarProducto(i) {
     let op = confirm("¿Desea quitar este producto del carrito?");
     if(op) {
+        let stockActual = parseInt($("#stockText").text());
+        let fila = tablaCarrito.find("tbody tr").eq(i);
+        let cantDevolver = parseInt(fila.find("td").eq(3).text());
+        $("#stockText").text(stockActual + cantDevolver);
         carrito.splice(i, 1);
         tablaCarrito.find("tbody tr:eq("+i+")").remove();
         CalcularTotalFactura();
         CalcularTotalProductos(0);
-        console.log(carrito);
     }
 }
 
