@@ -25,3 +25,6 @@ Se desarrolla la logica y el funcionamiento del carrito de compras.
 Agregando los filtrados y informacion relevante al sistema.
 Se agregan nuevos elementos de sugerencias en el inicio y se corrijen algunos bugs del carrito de compras.
 Se diseña el contenido para la seccion New Arrivals y se corrije un bug con el stock del producto.
+
+13/8/2025 16:26
+Se crea una funcion para llevar un Control preciso en el stock de los productos

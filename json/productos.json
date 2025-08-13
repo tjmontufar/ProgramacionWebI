@@ -695,7 +695,7 @@
         }, {
             "id": 10,
             "Nombre": "pantalon acampanado",
-            "Talla": "0,1,3,5,7,9",
+            "Talla": "0-1-3-5-7-9",
             "Genero": "Mujer",
             "Precio": 27.99,
             "stock": 30,
@@ -725,7 +725,7 @@
         }, {
             "id": 13,
             "Nombre": "pantalon formal",
-            "Talla": "28,30,32,34",
+            "Talla": "28-30-32-34",
             "Genero": "Hombre",
             "Precio": 32.99,
             "stock": 30,
@@ -735,7 +735,7 @@
         }, {
             "id": 14,
             "Nombre": "pantalon cargo",
-            "Talla": "28,30,32,34",
+            "Talla": "28-30-32-34",
             "Genero": "Hombre",
             "Precio": 30.99,
             "stock": 30,

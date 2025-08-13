@@ -1,11 +1,12 @@
 var carrito = [];
+var stockArray = [];
 let btnAgregarCarrito = $("#btnAgregarCarrito");
 let tablaCarrito = $("#tbCarrito");
 
 btnAgregarCarrito.on("click", function() {
     let codigo_ = $("#codigoText").text();
     let descripcion_ = $("#productoText").text() + " Talla " + $("#btnTalla .talla-selected").text();
-    let cantidad_ = $("#txtCantidad").val();
+    let cantidad_ = parseInt($("#txtCantidad").val());
     let precio_ = (parseFloat($("#precioText").text())).toFixed(2);
     let subtotal_ = cantidad_ * precio_;
     let total_ = parseFloat((subtotal_ * 0.15) + subtotal_);
@@ -48,7 +49,7 @@ btnAgregarCarrito.on("click", function() {
     tablaCarrito.append("</tbody>");
 
     let stockActual = parseInt($("#stockText").text());
-    $("#stockText").text(stockActual - cantidad_);
+    ControlDeStock(stockActual, codigo_, cantidad_, "agregar");
 
     CalcularTotalFactura();
     CalcularTotalProductos(1);
@@ -80,7 +81,9 @@ function BorrarProducto(i) {
         let stockActual = parseInt($("#stockText").text());
         let fila = tablaCarrito.find("tbody tr").eq(i);
         let cantDevolver = parseInt(fila.find("td").eq(3).text());
-        $("#stockText").text(stockActual + cantDevolver);
+        let codigoProducto = fila.attr("data-codigo");
+        ControlDeStock(stockActual,codigoProducto,cantDevolver,"devolver");
+
         carrito.splice(i, 1);
         tablaCarrito.find("tbody tr:eq("+i+")").remove();
         CalcularTotalFactura();
@@ -98,4 +101,30 @@ function CalcularTotalProductos(action) {
         totalProductos = totalProductos - 1;
         $("#totalProductos").text(totalProductos);
     }
+}
+
+// FUNCION PARA LLEVAR CONTROL DEL STOCK ACTUAL ENTRE DIFERENTES PRODUCTOS //
+function ControlDeStock(stock, codigo, cantidad, accion) {
+    let productoStock = stockArray.find(item => item.codigoProducto === codigo);
+
+    if(productoStock) {
+        if(accion === "agregar") {
+            productoStock.stockRestante -= cantidad;
+            productoStock.stockCarrito += cantidad;
+        } else if (accion === "devolver") {
+            productoStock.stockRestante += cantidad;
+            productoStock.stockCarrito -= cantidad;
+        }
+
+    } else {
+        if(accion === "agregar") {
+            let stockNuevo = stock - cantidad;
+            stockArray.push({codigoProducto:codigo, stockRestante:stockNuevo, stockCarrito:cantidad});
+        }   
+    }
+
+    let stockActualEnPantalla = stockArray.find(item => item.codigoProducto === codigo).stockRestante;
+    $("#stockText").text(stockActualEnPantalla);
+    
+    console.log(stockArray);
 }

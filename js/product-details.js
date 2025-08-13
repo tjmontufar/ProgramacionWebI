@@ -13,7 +13,15 @@ $(document).on("click", ".btn-detalles", function () {
     let descripcion = $(this).data("descripcion");
     let precio = $(this).data("precio");
     let imagen = $(this).data("imagen");
-    let stock = $(this).data("stock");
+    //let stock = $(this).data("stock");
+    let productoStock = stockArray.find(item => item.codigoProducto == idproducto);
+    if (productoStock) {
+        stock = productoStock.stockRestante;
+    }
+    else {
+        stock = $(this).data("stock");
+    }
+
     let talla = $(this).data("talla");
 
     // Cargar los datos del producto seleccionado a la seccion Detalles

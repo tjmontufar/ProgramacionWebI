@@ -474,3 +474,36 @@ a {
 .x {
     background-color: var(--color-primary-2);
 }
+
+.link-style-1 {
+    text-decoration: none;               
+    color: var(--color-secundary-1);         
+    transition: color .2s ease;
+}
+
+.link-style-1:hover,
+.link-style-1:focus {
+    text-decoration: none;              
+    color: rgb(120, 120, 120);            
+}
+
+footer .bg-footer p.margin-down {
+    margin: 20px 0 !important;            
+}
+
+footer .bg-brand-footer a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+footer .bg-brand-footer a:hover {
+color: var(--color-second-2);
+    text-decoration: none;
+}
+
+.out-stock {
+    background-color: red;
+    color: var(--color-white);
+    padding: 5px;
+    font-weight: bold;
+}

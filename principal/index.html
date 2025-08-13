@@ -237,19 +237,13 @@
     
         <div class="content-control">
           <div class="content-w-20 margin-20">
-            <h1 class="text-size-20">Categorías</h1>
-            <p><span class="link-style-1">Blusas</span></p>
-            <p><span class="link-style-1">Faldas</span></p>
-            <p><span class="link-style-1">Pantalones</span></p>
-            <p><span class="link-style-1">Short</span></p>
-            <p><span class="link-style-1">Tops</span></p>
-            <p><span class="link-style-1">Vestidos</span></p>
-            <p><span class="link-style-1">Zapatos</span></p>
             <hr>
             <h1 class="text-size-20">Talla</h1>
             <div class="btn-talla">
-              <button type="button">XS</button><button type="button">S</button>
-              <button type="button">M</button><button type="button">L</button>
+              <button type="button">XS</button>
+              <button type="button">S</button>
+              <button type="button">M</button>
+              <button type="button">L</button>
               <button type="button">XL</button>
               <button type="button">28</button><button type="button">29</button>
               <button type="button">30</button><button type="button">31</button>
@@ -532,7 +526,7 @@
                     <p>Talla:</p>
                     <div class="btn-talla" id="btnTalla"></div>
                     
-                    <p>En stock: <span id="stockText">1</span></p>
+                    <p>En stock: <span id="stockText">1</span> <span id="txtOutStock" class="out-stock" hidden>AGOTADO</span></p>
                     <label for="txtCantidad">Cantidad:</label>
                     <button type="button" id="btnMenos">-</button>
                     <input type="text" class="form-control text-center w-10" id="txtCantidad" name="txtCantidad" value="1" min="1" readonly>
@@ -618,7 +612,7 @@
             </div>
             <div class="col-md-2">
                 <p class="text-size-20">Tienda</p>
-                <p class="margin-down font-family"><a class="link-style-1" href="#">Nuevo</a></p>
+                <p class="margin-down font-family"><a class="link-style-1 nav-nuevos" href="#" id="">Nuevo</a></p>
                 <p class="margin-down font-family"><a class="link-style-1" href="#" id="p-hombres">Hombre</a></p>
                 <p class="margin-down font-family"><a class="link-style-1" href="#" id="p-mujeres">Mujer</a></p>
             </div>
