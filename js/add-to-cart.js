@@ -5,15 +5,44 @@ let tablaCarrito = $("#tbCarrito");
 
 btnAgregarCarrito.on("click", function() {
     let codigo_ = $("#codigoText").text();
-    let descripcion_ = $("#productoText").text() + " Talla " + $("#btnTalla .talla-selected").text();
+    let talla_ = $("#btnTalla .talla-selected").text();
+    let descripcion_ = $("#productoText").text() + " Talla " + talla_;
     let cantidad_ = parseInt($("#txtCantidad").val());
     let precio_ = (parseFloat($("#precioText").text())).toFixed(2);
     let subtotal_ = cantidad_ * precio_;
     let total_ = parseFloat((subtotal_ * 0.15) + subtotal_);
     let imagen_ = $("#imagenProducto").attr("src");
     total_ = total_.toFixed(2);
+    let stockActual = parseInt($("#stockText").text());
+    let codigoProductoId = talla_ + codigo_;
 
-    carrito.push({codigo:codigo_, imagen:imagen_, descripcion:descripcion_, cantidad:cantidad_, precio:precio_, subtotal:subtotal_, total:total_});
+    let exists = tablaCarrito.find(`tr[data-codigo="`+codigoProductoId+`"]`);
+
+    if(exists.length > 0) {
+        let agregarProducto = confirm("El producto seleccionado ya se encuentra en el carrito, ¿desea agregar ("+cantidad_+") al carrito?");
+
+        if(agregarProducto) {
+            let itemCarrito = carrito.find(item => item.codigo === codigoProductoId);
+            if (itemCarrito) {
+                itemCarrito.cantidad += cantidad_;
+                itemCarrito.subtotal = itemCarrito.cantidad * parseFloat(itemCarrito.precio);
+                itemCarrito.total = (itemCarrito.subtotal * 0.15) + itemCarrito.subtotal;
+            }
+
+            let fila = tablaCarrito.find(`tr[data-codigo="`+codigoProductoId+`"]`);
+            fila.find("td").eq(3).text(itemCarrito.cantidad);
+            fila.find("td").eq(5).text(itemCarrito.subtotal.toFixed(2));
+            fila.find("td").eq(6).text(itemCarrito.total.toFixed(2));
+
+            ControlDeStock(stockActual, codigo_, codigoProductoId, cantidad_, "agregar");
+            CalcularTotalFactura();
+            CalcularTotalProductos();
+        }
+
+        return 0;
+    }
+
+    carrito.push({codigo:codigoProductoId, imagen:imagen_, descripcion:descripcion_, cantidad:cantidad_, precio:precio_, subtotal:subtotal_, total:total_});
 
     tablaCarrito.empty();
     let thead = `<thead>
@@ -48,9 +77,7 @@ btnAgregarCarrito.on("click", function() {
     });
     tablaCarrito.append("</tbody>");
 
-    let stockActual = parseInt($("#stockText").text());
-    ControlDeStock(stockActual, codigo_, cantidad_, "agregar");
-
+    ControlDeStock(stockActual, codigo_, codigoProductoId, cantidad_, "agregar");
     CalcularTotalFactura();
     CalcularTotalProductos(1);
     alert("¡Producto cargado al carrito!");
@@ -78,11 +105,15 @@ function CalcularTotalFactura() {
 function BorrarProducto(i) {
     let op = confirm("¿Desea quitar este producto del carrito?");
     if(op) {
+        
+        
         let stockActual = parseInt($("#stockText").text());
         let fila = tablaCarrito.find("tbody tr").eq(i);
         let cantDevolver = parseInt(fila.find("td").eq(3).text());
-        let codigoProducto = fila.attr("data-codigo");
-        ControlDeStock(stockActual,codigoProducto,cantDevolver,"devolver");
+        let codigoProducto_ = fila.attr("data-codigo");
+        let itemStock = stockArray.find(item => item.codigoProducto === codigoProducto_);
+        let idProducto_ = itemStock.idProducto;
+        ControlDeStock(stockActual,idProducto_,codigoProducto_,cantDevolver,"devolver");
 
         carrito.splice(i, 1);
         tablaCarrito.find("tbody tr:eq("+i+")").remove();
@@ -104,7 +135,7 @@ function CalcularTotalProductos(action) {
 }
 
 // FUNCION PARA LLEVAR CONTROL DEL STOCK ACTUAL ENTRE DIFERENTES PRODUCTOS //
-function ControlDeStock(stock, codigo, cantidad, accion) {
+function ControlDeStock(stock, id, codigo, cantidad, accion) {
     let productoStock = stockArray.find(item => item.codigoProducto === codigo);
 
     if(productoStock) {
@@ -119,7 +150,7 @@ function ControlDeStock(stock, codigo, cantidad, accion) {
     } else {
         if(accion === "agregar") {
             let stockNuevo = stock - cantidad;
-            stockArray.push({codigoProducto:codigo, stockRestante:stockNuevo, stockCarrito:cantidad});
+            stockArray.push({idProducto:id,codigoProducto:codigo, stockRestante:stockNuevo, stockCarrito:cantidad});
         }   
     }
 

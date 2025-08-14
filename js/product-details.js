@@ -14,7 +14,7 @@ $(document).on("click", ".btn-detalles", function () {
     let precio = $(this).data("precio");
     let imagen = $(this).data("imagen");
     //let stock = $(this).data("stock");
-    let productoStock = stockArray.find(item => item.codigoProducto == idproducto);
+    let productoStock = stockArray.find(item => item.idProducto == idproducto);
     if (productoStock) {
         stock = productoStock.stockRestante;
     }

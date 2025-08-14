@@ -79,6 +79,13 @@
     border: none;
     cursor: pointer;
     font-size: 15px;
+    font-weight: bold;
+}
+
+.checkout-btn:hover {
+    color: var(--color-primary-1);
+    background-color: var(--color-primary-2);
+    
 }
 
 .cart-footer-details .fact {

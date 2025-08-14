@@ -29,29 +29,6 @@
             <h1>Bienvenido a Threads & Four</h1>
             <p class="text-size-20">Donde tenemos las mejores prendas de calidad.</p>
         </div>
-        <!-- <div class="row">
-            <div class="col-md-3 text-center">
-                <a href="#" id="img-p-hombres" class="img-button">
-                    <img class="img-modules" src="/imagenes/men.jpg" alt="Men">
-                    <div class="img-modules-text text-size-30 img-text-w-400">Hombres</div>
-                </a>
-                
-            </div>
-            <div class="col-md-4 text-center">
-                <a href="#" id="img-p-newarrivals" class="img-button">
-                    <img class="img-modules" src="/imagenes/camisanueva.jpg" alt="NewShirts">
-                    <div class="img-modules-text text-size-30 img-text-w-550">New Arrivals</div>
-                </a>
-                
-            </div>
-            <div class="col-md-3 text-center">
-                <a href="#" id="img-p-mujeres" class="img-button">
-                    <img class="img-modules" src="/imagenes/woman.jpg" alt="Woman">
-                    <div class="img-modules-text text-size-30 img-text-w-400">Mujeres</div>
-                </a>
-            </div>
-        </div>
-        <br> -->
         <div class="container">
             <div class="content-control">
                 <div class="content-w-50 text-center text-size-30">
@@ -255,9 +232,9 @@
             </div>
             <hr>
             <h1 class="text-size-20">Precio</h1>
-            <p><span class="link-style-1">Alto</span></p>
-            <p><span class="link-style-1">Medio</span></p>
-            <p><span class="link-style-1">Bajo</span></p>
+            <p><span class="link-style-1 pointer">Alto</span></p>
+            <p><span class="link-style-1 pointer">Medio</span></p>
+            <p><span class="link-style-1 pointer">Bajo</span></p>
           </div>
           <div class="content-w-80">
             <div id="productos-new" class="productos-catalogo"></div>
@@ -595,7 +572,7 @@
                     <input type="text" id="txtTotal" name="txtTotal" readonly value="0.00">
                 </div>
             </div>
-            <button class="checkout-btn">VER CARRITO</button>
+            <button class="checkout-btn" id="finish-shopping-cart">PROCEDER A PAGAR</button>
         </div>
     </div>
     <div id="cart-overlay" class="cart-overlay"></div>
@@ -645,5 +622,6 @@
     <script src="/js/new-content.js"></script>
     <script src="/js/product-details.js"></script>
     <script src="/js/add-to-cart.js"></script>
+    <script src="/js/finish-shopping-cart.js"></script>
 </body>
 </html>

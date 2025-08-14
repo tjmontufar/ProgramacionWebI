@@ -507,3 +507,7 @@ color: var(--color-second-2);
     padding: 5px;
     font-weight: bold;
 }
+
+.pointer {
+    cursor: pointer;
+}
