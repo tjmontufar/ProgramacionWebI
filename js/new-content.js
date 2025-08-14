@@ -71,7 +71,7 @@ $(document).ready(function () {
         mostrarProductos(productosNuevos);
         configurarFiltros();
     });
-    
+
     function mostrarProductos(productos) {
         let contenedor = $("#productos-new");
         contenedor.empty();
@@ -91,7 +91,7 @@ $(document).ready(function () {
             card.append(
                 `<img src="${prod.Imagen}" class="producto-img">`,
                 `<h3>${prod.Nombre}</h3>`,
-                `<p>$. ${prod.Precio}</p>`,
+                `<p>L. ${prod.Precio}</p>`,
                 `<button class="btn-detalles btn-comprar"
                    data-id="${prod.id}"
                    data-nombre="${prod.Nombre}"

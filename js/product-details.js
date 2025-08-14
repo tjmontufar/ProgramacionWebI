@@ -40,6 +40,22 @@ $(document).on("click", ".btn-detalles", function () {
     txtCantidad.attr("max",stock);
     txtCodigo.text(idproducto);
 
+    ////NUEVOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    let stockNum = parseInt(stock);
+    if (isNaN(stockNum)) stockNum = 0;
+    
+    if (stockNum <= 0) {
+        txtStock.text(0);
+        $("#txtOutStock").removeAttr("hidden");
+        txtCantidad.val(0);
+        txtCantidad.attr("max", 0);
+    } else {
+        txtStock.text(stockNum);
+        $("#txtOutStock").attr("hidden", true);
+        txtCantidad.val(1);
+        txtCantidad.attr("max", stockNum);
+    }
+
     let tallasArray = talla.split("-");
     mostrarTallasDisponibles(tallasArray);
 });

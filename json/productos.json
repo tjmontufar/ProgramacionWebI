@@ -504,7 +504,7 @@
         "Productos": [{
             "id": 121,
             "Nombre": "vestido fucsia",
-            "Talla": "Unitalla",
+            "Talla": "U",
             "Genero": "Mujer",
             "Precio": 19.99,
             "stock": 50,
@@ -513,7 +513,7 @@
         }, {
             "id": 122,
             "Nombre": "vestido estampado",
-            "Talla": "Unitalla",
+            "Talla": "U",
             "Genero": "Mujer",
             "Precio": 24.99, 
             "stock": 30,
@@ -522,7 +522,7 @@
         }, {
             "id": 123,
             "Nombre": "vestido azul",
-            "Talla": "Unitalla",
+            "Talla": "U",
             "Genero": "Mujer",
             "Precio": 24.99,
             "stock": 30,
@@ -606,47 +606,51 @@
             "Nombre": "vestido estampado",
             "Talla": "S-M-L-XL",
             "Genero": "Mujer",
-            "Precio": 30.50,
+            "Precio": 793.00,
             "stock": 50,
             "Descripcion": "Diseño clásico y elegante para cualquier ocasion.Diferentes tonos y estilos.",
             "Imagen": "/imagenes/Nuevo/VestidosEstampados.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 142,
             "Nombre": "vestido elegante",
             "Talla": "S-M-L-XL",
             "Genero": "Mujer",
-            "Precio": 28.99,
+            "Precio": 753.74,
             "stock": 30,
             "Descripcion": "Diseño elegante y a la moda perfecto para cualquier ocacion.",
             "Imagen": "/imagenes/Nuevo/VestidosElegantes.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 143,
             "Nombre": "tops",
             "Talla": "XS-S-M-L",
             "Genero": "Mujer",
-            "Precio": 25.99,
+            "Precio": 675.74,
             "stock": 30,
             "Descripcion": "Estilo llamativo y juvenil perfecto para cualquier outfit.",
             "Imagen": "/imagenes/Nuevo/Tops.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 144,
             "Nombre": "corse",
             "Talla": "XS-S-M-L",
             "Genero": "Mujer",
-            "Precio": 26.99,
+            "Precio": 701.74,
             "stock": 30,
             "Descripcion": "Diseño moderno y elegante que resalta la figura. Ideal para ocasiones especiales.",
             "Imagen": "/imagenes/Nuevo/Corse.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 145,
             "Nombre": "falda escolar",
             "Talla": "XS-S-M-L",
             "Genero": "Mujer",
-            "Precio": 20.99,
+            "Precio": 545.74,
             "stock": 30,
             "Descripcion": "Falda corta con diseño escolar, ideal para un look juvenil y fresco.",
             "Imagen": "/imagenes/Nuevo/FaldaEscolar.jpg",
@@ -657,107 +661,117 @@
             "Nombre": "falda jean",
             "Talla": "XS-S-M-L",
             "Genero": "Mujer",
-            "Precio": 22.99,
+            "Precio": 597.74,
             "stock": 30,
             "Descripcion": "Falda de mezclilla con estilo casual, perfecta para combinar con cualquier blusa.",
             "Imagen": "/imagenes/Nuevo/FaldaJean.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 147,
             "Nombre": "blusa estampada",
             "Talla": "S-M-L-XL",
             "Genero": "Mujer",
-            "Precio": 24.99,
+            "Precio": 649.74,
             "stock": 30,
             "Descripcion": "Blusa elegante y moderna, perfecta para ocasiones especiales.",
             "Imagen": "/imagenes/Nuevo/BlusaEstampada.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 148,
             "Nombre": "blusa manga larga",
             "Talla": "S-M-L-XL",
             "Genero": "Mujer",
-            "Precio": 25.99,
+            "Precio": 675.74,
             "stock": 30,
             "Descripcion": "Blusa de manga larga con diseño elegante, ideal para climas frescos.",
             "Imagen": "/imagenes/Nuevo/BlusaMangaLarga.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 149,
             "Nombre": "pantalon elegante",
             "Talla": "S-M-L-XL",
             "Genero": "Mujer",
-            "Precio": 30.99,
+            "Precio": 805.74,
             "stock": 30,
             "Descripcion": "Pantalón elegante y cómodo, ideal para el trabajo o eventos formales.",
             "Imagen": "/imagenes/Nuevo/PantalonElegante.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 1410,
             "Nombre": "pantalon acampanado",
             "Talla": "0-1-3-5-7-9",
             "Genero": "Mujer",
-            "Precio": 27.99,
+            "Precio": 727.74,
             "stock": 30,
             "Descripcion": "Pantalón acampanado con estilo retro, perfecto para un look único y moderno.",
             "Imagen": "/imagenes/Nuevo/PantalonAcampanado.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 1411,
             "Nombre": "camisa formal",
             "Talla": "S-M-L-XL",
             "Genero": "Hombre",
-            "Precio": 29.99,
+            "Precio": 779.74,
             "stock": 30,
             "Descripcion": "Camisa formal de alta calidad, ideal para ocasiones especiales o trabajo.",
             "Imagen": "/imagenes/Nuevo/CamisaFormal.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 1412,
             "Nombre": "camisa polo",
             "Talla": "S-M-L-XL",
             "Genero": "Hombre",
-            "Precio": 30.99,
+            "Precio": 805.74,
             "stock": 30,
             "Descripcion": "Camisa polo clásica y cómoda, perfecta para un look casual y elegante.",
             "Imagen": "/imagenes/Nuevo/CamisaPolo.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 1413,
             "Nombre": "pantalon formal",
             "Talla": "28-30-32-34",
             "Genero": "Hombre",
-            "Precio": 32.99,
+            "Precio": 857.74,
             "stock": 30,
             "Descripcion": "Pantalón formal de corte moderno, ideal para el trabajo o eventos formales.",
             "Imagen": "/imagenes/Nuevo/PantalonFormalH.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 1414,
             "Nombre": "pantalon cargo",
             "Talla": "28-30-32-34",
             "Genero": "Hombre",
-            "Precio": 30.99,
+            "Precio": 805.74,
             "stock": 30,
             "Descripcion": "Pantalón cargo con múltiples bolsillos, ideal para un look casual y funcional.",
             "Imagen": "/imagenes/Nuevo/PantalonCargoHjpg.jpg",
             "EsNuevo": true
-        },{
+        },
+        {
             "id": 1415,
             "Nombre": "camiseta hombre araña",
             "Talla": "S-M-L-XL",
             "Genero": "Hombre",
-            "Precio": 20.99,
+            "Precio": 545.74,
             "stock": 30,
             "Descripcion": "Camiseta básica y cómoda, ideal para el uso diario o actividades informales.",
             "Imagen": "/imagenes/Nuevo/CamisetaHombreA.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 1416,
             "Nombre": "camiseta tommy",
             "Talla": "S-M-L-XL",
             "Genero": "Hombre",
-            "Precio": 20.99,
+            "Precio": 545.74,
             "stock": 30,
             "Descripcion": "Camiseta con diseño moderno y juvenil, perfecta para un look casual.",
             "Imagen": "/imagenes/Nuevo/CamisetaTommy.jpg",
@@ -768,27 +782,29 @@
             "Nombre": "calsoneta bombera",
             "Talla": "S-M-L-XL",
             "Genero": "Hombre",
-            "Precio": 25.99,
+            "Precio": 675.74,
             "stock": 30,
             "Descripcion": "Calsoneta con diseño de bombera, ideal para los amantes de la aventura y el aire libre.",
             "Imagen": "/imagenes/Nuevo/CalzonetaBombera.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 1418,
             "Nombre": "calsoneta deportiva",
             "Talla": "S-M-L-XL",
             "Genero": "Hombre",
-            "Precio": 25.99,
+            "Precio": 675.74,
             "stock": 30,
             "Descripcion": "Calsoneta deportiva cómoda y ligera, perfecta para actividades al aire libre o en el gimnasio.",
             "Imagen": "/imagenes/Nuevo/CalzonetaDeportiva.jpg",
             "EsNuevo": true
-        }, {
+        }, 
+        {
             "id": 1419,
             "Nombre": "tenis alto",
             "Talla": "37-38-39-40-41",
             "Genero": "Hombre",
-            "Precio": 30.99,
+            "Precio": 805.74,
             "stock": 30,
             "Descripcion": "Tenis alto con estilo moderno, ideal para un look casual y urbano.",
             "Imagen": "/imagenes/Nuevo/TenisAlto.jpg",
@@ -799,19 +815,18 @@
             "Nombre": "tenis hombre",
             "Talla": "37-38-39-40-41",
             "Genero": "Hombre",
-            "Precio": 30.99,
+            "Precio": 805.74,
             "stock": 30,
             "Descripcion": "Tenis casuales y cómodos, perfectos para el uso diario o actividades deportivas.",
             "Imagen": "/imagenes/Nuevo/TenisHombres.jpg",
             "EsNuevo": true
         },
-
         {
             "id": 1421,
             "Nombre": "Camisa Negra Hombre",
             "Talla": "37-38-39-40-41",
             "Genero": "Hombre",
-            "Precio": 30.99,
+            "Precio": 805.74,
             "stock": 30,
             "Descripcion": "Camisa negra formal",
             "Imagen": "/imagenes/Nuevo/camisaNegra.jpg",
