@@ -4,6 +4,8 @@ btnFinalizar.on("click", function() {
     let filasCarrito = $("#tbCarrito tbody tr").length;
 
     if(filasCarrito > 0) {
+        carrito.length = 0;
+        stockArray.length = 0;
         tablaCarrito.empty();
         let thead = `<thead>
                         <tr>
